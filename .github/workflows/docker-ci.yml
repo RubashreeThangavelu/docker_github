@@ -33,7 +33,7 @@ jobs:
 
       - name: Wait for Grid
         run: sleep 30
-
+      
       - name: Execute Tests
         run: docker compose run --rm selenium-tests mvn test
 
@@ -42,9 +42,8 @@ jobs:
         if: always()
         with:
           name: selenium-reports
-           path: reports/
+          path: reports/
 
       - name: Stop Containers
         if: always()
- run: docker compose down
-
+        run: docker compose down

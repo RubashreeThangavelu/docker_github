@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>TestNG:  Login</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 20 16:25:10 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>65 seconds (65685 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.verifyButtonAndLinkVisibility()'><b>verifyButtonAndLinkVisibility</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.loginWithInvalidPassword()'><b>loginWithInvalidPassword</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.loginWithEmptyFields()'><b>loginWithEmptyFields</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.loginWithValidCredentials()'><b>loginWithValidCredentials</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.verifyLoginAfterBackendReset()'><b>verifyLoginAfterBackendReset</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.verifyLoginWithMaxChars()'><b>verifyLoginWithMaxChars</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.switchToNewTabOrSameTab()'><b>switchToNewTabOrSameTab</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.clickSignUpLinkTest()'><b>clickSignUpLinkTest</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.loginWithUsernameContainingSpaces()'><b>loginWithUsernameContainingSpaces</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.verifyAllElementsPresent()'><b>verifyAllElementsPresent</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.verifyAutofillBehavior()'><b>verifyAutofillBehavior</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.loginWithPasswordEmpty()'><b>loginWithPasswordEmpty</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.verifyLabelsVisible()'><b>verifyLabelsVisible</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.loginWithSQLInjection()'><b>loginWithSQLInjection</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.loginWithInvalidUsername()'><b>loginWithInvalidUsername</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.verifyLoginAfterPasswordChange()'><b>verifyLoginAfterPasswordChange</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.loginWithUsernameEmpty()'><b>loginWithUsernameEmpty</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.verifyLoginPageTitle()'><b>verifyLoginPageTitle</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.verifyKeyboardNavigationLogin()'><b>verifyKeyboardNavigationLogin</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.loginWithWhitespacePassword()'><b>loginWithWhitespacePassword</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@1280682</td></tr>
+</table><p>
+</body>
+</html>

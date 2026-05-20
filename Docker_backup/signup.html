@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+
+            /* Same background as Schedule Backup page */
+            background: linear-gradient(to bottom, #e3f2fd 0%, #d6ecff 50%, #cfe8ff 100%);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h2 {
+            color: #0d47a1;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 16px 0;
+            border: 1px solid #90caf9;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #1976d2;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0d47a1;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sign Up</h2>
+    <form method="post" action="signup">
+        Username: <input type="text" id="username" name="username" required><br>
+        <span id="usernameError" style="color:red"></span>
+<br>
+        Email: <input type="email" id="email" name="email" required><br>
+        <span id="emailError" style="color:red"></span>
+
+        Password: <input type="password" id="password" name="password"  required>
+<span id="passwordError" style="color:red"></span><br>
+        Confirm Password: <input type="password" id="confirm_password" name="confirm_password" required><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+
+<script>
+
+
+document.querySelector("form").addEventListener("submit", function(e){
+    let u = document.getElementById("username").value;
+
+    if(u.length < 3){
+        document.getElementById("usernameError").innerText="Username too short";
+        e.preventDefault();
+    } 
+    else if(u.length > 20){
+        document.getElementById("usernameError").innerText="Username too long";
+        e.preventDefault();
+    }
+});
+
+
+document.querySelector("form").addEventListener("submit", function(e){
+    let pass = document.getElementById("password").value;
+    let msg = document.getElementById("passwordError");
+
+    msg.innerText = "";   // Clear old message
+
+    let strong = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$/;
+
+    if(!strong.test(pass)){
+        msg.innerText = "Password too weak";
+        e.preventDefault();
+    }
+});
+</script>
+
+</html>
+
