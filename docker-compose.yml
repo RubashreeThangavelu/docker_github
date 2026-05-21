@@ -2,7 +2,7 @@ services:
 
   app:
     image: tomcat:10.1
-    container_name: tomcat-app
+    container_name: tomcat-app1
     ports:
       - "8081:8080"
     volumes:
@@ -15,7 +15,7 @@ services:
 
   firefox:
     image: selenium/standalone-firefox:4.18.1
-    container_name: firefox
+    container_name: firefox-github
     shm_size: 2gb
     ports:
       - "4444:4444"
@@ -24,7 +24,7 @@ services:
 
   selenium-tests:
     build: .
-    container_name: selenium-tests
+    container_name: selenium-test
     depends_on:
       - firefox
       - app
@@ -42,3 +42,4 @@ volumes:
 
 networks:
   selenium-grid:
+    name: selenium-github

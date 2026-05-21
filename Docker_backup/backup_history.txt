@@ -707,3 +707,30 @@ Status     : Success
 Size       : 17 bytes
 Duration   : 0 sec
 
+======================================
+Time       : 2026-05-21 07:26:29
+Source     : /data/temp
+Destination: /data/backup
+File       : file6.txt
+Status     : Success
+Size       : 17 bytes
+Duration   : 0 sec
+
+======================================
+Time       : 2026-05-21 07:28:00
+Source     : /path/to/source
+Destination: /path/to/destination
+File       : N/A
+Status     : Failed
+Duration   : 0 sec
+Reason     : Source not found
+
+======================================
+Time       : 2026-05-21 07:28:28
+Source     : /data/temp
+Destination: /data/backup
+File       : file6.txt
+Status     : Success
+Size       : 17 bytes
+Duration   : 0 sec
+
