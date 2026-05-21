@@ -734,3 +734,30 @@ Status     : Success
 Size       : 17 bytes
 Duration   : 0 sec
 
+======================================
+Time       : 2026-05-21 07:30:00
+Source     : /data/temp
+Destination: /data/backup
+File       : file6.txt
+Status     : Success
+Size       : 17 bytes
+Duration   : 0 sec
+
+======================================
+Time       : 2026-05-21 16:48:18
+Source     : /data/temp
+Destination: /data/backup
+File       : file6.txt
+Status     : Success
+Size       : 17 bytes
+Duration   : 0 sec
+
+======================================
+Time       : 2026-05-21 16:49:59
+Source     : /data/temp
+Destination: /data/backup
+File       : file6.txt
+Status     : Success
+Size       : 17 bytes
+Duration   : 0 sec
+

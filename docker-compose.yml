@@ -10,6 +10,8 @@ services:
       - shared-data:/data
     environment:
       - TZ=Asia/Kolkata
+      - DB_HOST=mysql-db1
+      - DB_PORT=3306
     networks:
       - selenium-grid
 
@@ -28,12 +30,24 @@ services:
     depends_on:
       - firefox
       - app
+      - mysql
     working_dir: /app
     command: >
       sh -c "/init-data.sh; mvn test; mkdir -p /reports; cp -r target/surefire-reports /reports/"
     volumes:
       - ./reports:/reports
       - shared-data:/data
+    networks:
+      - selenium-grid
+
+  mysql:
+    image: mysql:8
+    container_name: mysql-db1
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    ports:
+      - "3306:3306"
     networks:
       - selenium-grid
 

@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 39, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 146.6 s <<< FAILURE! -- in TestSuite
-com.selenium.tests.DashboardTest.verifyBackupSummaryConsistency -- Time elapsed: 0.653 s <<< FAILURE!
-java.lang.AssertionError: expected [2026-05-20 16:23:54] but found [Last Run: 2026-05-20 16:23:54]
+Tests run: 39, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 146.7 s <<< FAILURE! -- in TestSuite
+com.selenium.tests.DashboardTest.verifyBackupSummaryConsistency -- Time elapsed: 0.662 s <<< FAILURE!
+java.lang.AssertionError: expected [2026-05-21 16:48:18] but found [Last Run: 2026-05-21 16:48:18]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)

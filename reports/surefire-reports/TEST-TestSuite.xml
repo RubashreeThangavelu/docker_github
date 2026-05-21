@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="146.639" tests="39" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="146.697" tests="39" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -63,19 +63,19 @@
     <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="verifyAllTextVisible" classname="com.selenium.tests.DashboardTest" time="0.054">
+  <testcase name="verifyAutoRefresh" classname="com.selenium.tests.DashboardTest" time="16.047">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-May 20, 2026 4:23:49 PM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+May 21, 2026 4:47:53 PM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
 INFO: Using OpenTelemetry for tracing
 ]]></system-err>
   </testcase>
-  <testcase name="verifyBackupTimeReflectsSystemClock" classname="com.selenium.tests.DashboardTest" time="5.821"/>
-  <testcase name="verifyAutoRefresh" classname="com.selenium.tests.DashboardTest" time="16.059"/>
-  <testcase name="verifyBackupStatsVisible" classname="com.selenium.tests.DashboardTest" time="0.122"/>
-  <testcase name="verifyBackupSummaryConsistency" classname="com.selenium.tests.DashboardTest" time="0.653">
-    <failure message="expected [2026-05-20 16:23:54] but found [Last Run: 2026-05-20 16:23:54]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [2026-05-20 16:23:54] but found [Last Run: 2026-05-20 16:23:54]
+  <testcase name="verifyAllTextVisible" classname="com.selenium.tests.DashboardTest" time="0.057"/>
+  <testcase name="verifyBackupStatsVisible" classname="com.selenium.tests.DashboardTest" time="0.117"/>
+  <testcase name="verifyBackupTimeReflectsSystemClock" classname="com.selenium.tests.DashboardTest" time="5.83"/>
+  <testcase name="verifyBackupSummaryConsistency" classname="com.selenium.tests.DashboardTest" time="0.662">
+    <failure message="expected [2026-05-21 16:48:18] but found [Last Run: 2026-05-21 16:48:18]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [2026-05-21 16:48:18] but found [Last Run: 2026-05-21 16:48:18]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -101,61 +101,61 @@ INFO: Using OpenTelemetry for tracing
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></failure>
   </testcase>
-  <testcase name="verifyDashboardAfterRefresh" classname="com.selenium.tests.DashboardTest" time="0.049"/>
-  <testcase name="verifyDashboardHandlesLargeBackupCount" classname="com.selenium.tests.DashboardTest" time="0.055"/>
-  <testcase name="verifyDashboardNavigation" classname="com.selenium.tests.DashboardTest" time="0.043"/>
-  <testcase name="verifyFailedBackupStatus" classname="com.selenium.tests.DashboardTest" time="0.023"/>
-  <testcase name="verifyFontStyles" classname="com.selenium.tests.DashboardTest" time="0.025"/>
-  <testcase name="verifyGoToLoginButton" classname="com.selenium.tests.DashboardTest" time="0.159">
+  <testcase name="verifyDashboardAfterRefresh" classname="com.selenium.tests.DashboardTest" time="0.071"/>
+  <testcase name="verifyDashboardHandlesLargeBackupCount" classname="com.selenium.tests.DashboardTest" time="0.062"/>
+  <testcase name="verifyDashboardNavigation" classname="com.selenium.tests.DashboardTest" time="0.045"/>
+  <testcase name="verifyFailedBackupStatus" classname="com.selenium.tests.DashboardTest" time="0.024"/>
+  <testcase name="verifyFontStyles" classname="com.selenium.tests.DashboardTest" time="0.028"/>
+  <testcase name="verifyGoToLoginButton" classname="com.selenium.tests.DashboardTest" time="0.167">
     <system-out><![CDATA[Navigation to login page verified.
 Login page elements verified and login button is clickable.
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGoToLoginButtonEffect" classname="com.selenium.tests.DashboardTest" time="0.183">
+  <testcase name="verifyGoToLoginButtonEffect" classname="com.selenium.tests.DashboardTest" time="0.192">
     <system-out><![CDATA[Button hover color: rgb(25, 118, 210)
 ]]></system-out>
   </testcase>
-  <testcase name="verifyNoOverlappingElements" classname="com.selenium.tests.DashboardTest" time="0.112"/>
-  <testcase name="verifyPageBackgroundColor" classname="com.selenium.tests.DashboardTest" time="0.03"/>
-  <testcase name="verifyPageHeading" classname="com.selenium.tests.DashboardTest" time="0.031"/>
-  <testcase name="verifyPageLoadSpeed" classname="com.selenium.tests.DashboardTest" time="0.039"/>
+  <testcase name="verifyNoOverlappingElements" classname="com.selenium.tests.DashboardTest" time="0.133"/>
+  <testcase name="verifyPageBackgroundColor" classname="com.selenium.tests.DashboardTest" time="0.025"/>
+  <testcase name="verifyPageHeading" classname="com.selenium.tests.DashboardTest" time="0.03"/>
+  <testcase name="verifyPageLoadSpeed" classname="com.selenium.tests.DashboardTest" time="0.034"/>
   <testcase name="verifyPageTitle" classname="com.selenium.tests.DashboardTest" time="0.007"/>
-  <testcase name="verifyScreenReaderCompatibility" classname="com.selenium.tests.DashboardTest" time="0.052"/>
-  <testcase name="verifyStatsAlignment" classname="com.selenium.tests.DashboardTest" time="0.125">
-    <system-out><![CDATA[Last Backup Time: 2026-05-20 16:25:00 X position: 397
-Total Backups Completed: 73 X position: 397
+  <testcase name="verifyScreenReaderCompatibility" classname="com.selenium.tests.DashboardTest" time="0.063"/>
+  <testcase name="verifyStatsAlignment" classname="com.selenium.tests.DashboardTest" time="0.114">
+    <system-out><![CDATA[Last Backup Time: 2026-05-21 16:48:18 X position: 397
+Total Backups Completed: 77 X position: 397
 Files in Last Backup: 1 X position: 397
 Status: Success X position: 397
 All statistics are aligned correctly.
 ]]></system-out>
   </testcase>
-  <testcase name="loginWithEmptyFields" classname="com.selenium.tests.LoginTest" time="0.26"/>
-  <testcase name="loginWithPasswordEmpty" classname="com.selenium.tests.LoginTest" time="0.283"/>
-  <testcase name="clickSignUpLinkTest" classname="com.selenium.tests.LoginTest" time="0.121"/>
-  <testcase name="loginWithInvalidPassword" classname="com.selenium.tests.LoginTest" time="0.091"/>
-  <testcase name="loginWithInvalidUsername" classname="com.selenium.tests.LoginTest" time="0.095"/>
-  <testcase name="loginWithSQLInjection" classname="com.selenium.tests.LoginTest" time="0.102"/>
-  <testcase name="loginWithUsernameContainingSpaces" classname="com.selenium.tests.LoginTest" time="0.107"/>
-  <testcase name="loginWithUsernameEmpty" classname="com.selenium.tests.LoginTest" time="0.277"/>
-  <testcase name="loginWithValidCredentials" classname="com.selenium.tests.LoginTest" time="0.765"/>
-  <testcase name="loginWithWhitespacePassword" classname="com.selenium.tests.LoginTest" time="0.039"/>
-  <testcase name="switchToNewTabOrSameTab" classname="com.selenium.tests.LoginTest" time="0.108">
+  <testcase name="loginWithPasswordEmpty" classname="com.selenium.tests.LoginTest" time="0.293"/>
+  <testcase name="loginWithEmptyFields" classname="com.selenium.tests.LoginTest" time="0.264"/>
+  <testcase name="loginWithInvalidUsername" classname="com.selenium.tests.LoginTest" time="0.101"/>
+  <testcase name="loginWithInvalidPassword" classname="com.selenium.tests.LoginTest" time="0.097"/>
+  <testcase name="clickSignUpLinkTest" classname="com.selenium.tests.LoginTest" time="0.139"/>
+  <testcase name="loginWithSQLInjection" classname="com.selenium.tests.LoginTest" time="0.103"/>
+  <testcase name="loginWithUsernameContainingSpaces" classname="com.selenium.tests.LoginTest" time="0.099"/>
+  <testcase name="loginWithUsernameEmpty" classname="com.selenium.tests.LoginTest" time="0.28"/>
+  <testcase name="loginWithValidCredentials" classname="com.selenium.tests.LoginTest" time="0.788"/>
+  <testcase name="loginWithWhitespacePassword" classname="com.selenium.tests.LoginTest" time="0.042"/>
+  <testcase name="switchToNewTabOrSameTab" classname="com.selenium.tests.LoginTest" time="0.114">
     <system-out><![CDATA[Opened in the same tab.
 ]]></system-out>
   </testcase>
-  <testcase name="verifyAllElementsPresent" classname="com.selenium.tests.LoginTest" time="0.075"/>
-  <testcase name="verifyAutofillBehavior" classname="com.selenium.tests.LoginTest" time="0.04">
+  <testcase name="verifyAllElementsPresent" classname="com.selenium.tests.LoginTest" time="0.073"/>
+  <testcase name="verifyAutofillBehavior" classname="com.selenium.tests.LoginTest" time="0.037">
     <system-out><![CDATA[Username autocomplete attribute: 
 Login fields are ready for autofill/manual input.
 ]]></system-out>
   </testcase>
-  <testcase name="verifyButtonAndLinkVisibility" classname="com.selenium.tests.LoginTest" time="0.048"/>
-  <testcase name="verifyKeyboardNavigationLogin" classname="com.selenium.tests.LoginTest" time="0.636"/>
+  <testcase name="verifyButtonAndLinkVisibility" classname="com.selenium.tests.LoginTest" time="0.043"/>
+  <testcase name="verifyKeyboardNavigationLogin" classname="com.selenium.tests.LoginTest" time="0.647"/>
   <testcase name="verifyLabelsVisible" classname="com.selenium.tests.LoginTest" time="0.024"/>
-  <testcase name="verifyLoginAfterBackendReset" classname="com.selenium.tests.LoginTest" time="0.143"/>
-  <testcase name="verifyLoginAfterPasswordChange" classname="com.selenium.tests.LoginTest" time="0.744"/>
-  <testcase name="verifyLoginPageTitle" classname="com.selenium.tests.LoginTest" time="0.003"/>
-  <testcase name="verifyLoginWithMaxChars" classname="com.selenium.tests.LoginTest" time="0.141">
+  <testcase name="verifyLoginAfterBackendReset" classname="com.selenium.tests.LoginTest" time="0.149"/>
+  <testcase name="verifyLoginAfterPasswordChange" classname="com.selenium.tests.LoginTest" time="0.752"/>
+  <testcase name="verifyLoginPageTitle" classname="com.selenium.tests.LoginTest" time="0.008"/>
+  <testcase name="verifyLoginWithMaxChars" classname="com.selenium.tests.LoginTest" time="0.156">
     <system-out><![CDATA[PASS: Login processed correctly; input validation enforced for max chars.
 ]]></system-out>
   </testcase>
