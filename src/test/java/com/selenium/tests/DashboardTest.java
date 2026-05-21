@@ -275,8 +275,8 @@ public class DashboardTest extends BaseTest {
         Assert.assertTrue(loadTime <= 2000);
     }
 
-    // 18. verify backup Summary consistency
-        @Test
+   // 18. verify backup Summary consistency
+       @Test
     public void verifyBackupSummaryConsistency() throws InterruptedException {
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 
@@ -335,7 +335,6 @@ public class DashboardTest extends BaseTest {
 
     System.out.println("Backup summary is consistent between Dashboard and Backup Status page.");
 }
-
     // 19. Verify welcome page when no backup exists
     @Test
     public void verifyWelcomePageWhenNoBackupsExist() {
