@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">39 methods, 1 failed,   38 passed</span>
+                    <span class="method-stats">39 methods, 4 failed,   35 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,22 @@
                     <div class="method-list-content failed suite-BackupSuite">
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BackupSuite" title="com.selenium.tests.LoginTest" class="method navigator-link" hash-for-method="loginWithValidCredentials">loginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-BackupSuite" title="com.selenium.tests.DashboardTest" class="method navigator-link" hash-for-method="verifyBackupSummaryConsistency">verifyBackupSummaryConsistency</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BackupSuite" title="com.selenium.tests.LoginTest" class="method navigator-link" hash-for-method="verifyKeyboardNavigationLogin">verifyKeyboardNavigationLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BackupSuite" title="com.selenium.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginAfterPasswordChange">verifyLoginAfterPasswordChange</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-BackupSuite -->
@@ -153,11 +168,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-BackupSuite" title="com.selenium.tests.LoginTest" class="method navigator-link" hash-for-method="loginWithUsernameEmpty">loginWithUsernameEmpty</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BackupSuite" title="com.selenium.tests.LoginTest" class="method navigator-link" hash-for-method="loginWithValidCredentials">loginWithValidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -242,22 +252,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BackupSuite" title="com.selenium.tests.LoginTest" class="method navigator-link" hash-for-method="verifyKeyboardNavigationLogin">verifyKeyboardNavigationLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-BackupSuite" title="com.selenium.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLabelsVisible">verifyLabelsVisible</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-BackupSuite" title="com.selenium.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginAfterBackendReset">verifyLoginAfterBackendReset</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BackupSuite" title="com.selenium.tests.LoginTest" class="method navigator-link" hash-for-method="verifyLoginAfterPasswordChange">verifyLoginAfterPasswordChange</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -320,6 +320,83 @@
           <div class="suite-BackupSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">com.selenium.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidCredentials">
+                  </a> <!-- loginWithValidCredentials -->
+                  <span class="method-name">loginWithValidCredentials</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Backup&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:23885, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 17297, moz:profile: /tmp/rust_mozprofilezxdfFY, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ea859dd-29ce-4b72-8818-75f39c15326e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.selenium.tests.LoginTest.loginWithValidCredentials(LoginTest.java:77)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyKeyboardNavigationLogin">
+                  </a> <!-- verifyKeyboardNavigationLogin -->
+                  <span class="method-name">verifyKeyboardNavigationLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Backup&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:26349, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 18856, moz:profile: /tmp/rust_mozprofileOAc4r6, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1fb33652-dd86-46d7-8b88-ea9a0cb3edaf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.selenium.tests.LoginTest.verifyKeyboardNavigationLogin(LoginTest.java:269)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginAfterPasswordChange">
+                  </a> <!-- verifyLoginAfterPasswordChange -->
+                  <span class="method-name">verifyLoginAfterPasswordChange</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Backup&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:26776, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 19667, moz:profile: /tmp/rust_mozprofile1bq13r, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e7030093-a7af-493f-98d3-c59371193a41
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.selenium.tests.LoginTest.verifyLoginAfterPasswordChange(LoginTest.java:214)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BackupSuite-class-failed -->
+          <div class="suite-BackupSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">com.selenium.tests.DashboardTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -332,8 +409,8 @@
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:23147, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 1052, moz:profile: /tmp/rust_mozprofilelSmlCA, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 49198fc0-0438-4209-a2f4-3d3b80340396
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:32463, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 10673, moz:profile: /tmp/rust_mozprofileb99iWx, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4f955d8c-f6d9-4472-9da3-7b3bdeab2181
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at com.selenium.tests.DashboardTest.verifyBackupSummaryConsistency(DashboardTest.java:311)
@@ -412,13 +489,6 @@ Session ID: 49198fc0-0438-4209-a2f4-3d3b80340396
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithValidCredentials">
-                  </a> <!-- loginWithValidCredentials -->
-                  <span class="method-name">loginWithValidCredentials</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="loginWithWhitespacePassword">
                   </a> <!-- loginWithWhitespacePassword -->
                   <span class="method-name">loginWithWhitespacePassword</span>
@@ -454,13 +524,6 @@ Session ID: 49198fc0-0438-4209-a2f4-3d3b80340396
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyKeyboardNavigationLogin">
-                  </a> <!-- verifyKeyboardNavigationLogin -->
-                  <span class="method-name">verifyKeyboardNavigationLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyLabelsVisible">
                   </a> <!-- verifyLabelsVisible -->
                   <span class="method-name">verifyLabelsVisible</span>
@@ -471,13 +534,6 @@ Session ID: 49198fc0-0438-4209-a2f4-3d3b80340396
                   <a name="verifyLoginAfterBackendReset">
                   </a> <!-- verifyLoginAfterBackendReset -->
                   <span class="method-name">verifyLoginAfterBackendReset</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginAfterPasswordChange">
-                  </a> <!-- verifyLoginAfterPasswordChange -->
-                  <span class="method-name">verifyLoginAfterPasswordChange</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -709,155 +765,155 @@ data.addRows(39);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyBackupSummaryConsistency')
 data.setCell(0, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(0, 3, 40163);
+data.setCell(0, 3, 40214);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyAutoRefresh')
 data.setCell(1, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(1, 3, 16059);
+data.setCell(1, 3, 16045);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyBackupTimeReflectsSystemClock')
-data.setCell(2, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(2, 3, 5930);
+data.setCell(2, 1, 'verifyLoginAfterPasswordChange')
+data.setCell(2, 2, 'com.selenium.tests.LoginTest')
+data.setCell(2, 3, 15303);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginWithValidCredentials')
 data.setCell(3, 2, 'com.selenium.tests.LoginTest')
-data.setCell(3, 3, 777);
+data.setCell(3, 3, 10246);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyLoginAfterPasswordChange')
+data.setCell(4, 1, 'verifyKeyboardNavigationLogin')
 data.setCell(4, 2, 'com.selenium.tests.LoginTest')
-data.setCell(4, 3, 764);
+data.setCell(4, 3, 10239);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyKeyboardNavigationLogin')
-data.setCell(5, 2, 'com.selenium.tests.LoginTest')
-data.setCell(5, 3, 648);
+data.setCell(5, 1, 'verifyBackupTimeReflectsSystemClock')
+data.setCell(5, 2, 'com.selenium.tests.DashboardTest')
+data.setCell(5, 3, 5944);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginWithInvalidUsername')
+data.setCell(6, 1, 'loginWithUsernameEmpty')
 data.setCell(6, 2, 'com.selenium.tests.LoginTest')
-data.setCell(6, 3, 366);
+data.setCell(6, 3, 275);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginWithUsernameEmpty')
+data.setCell(7, 1, 'loginWithPasswordEmpty')
 data.setCell(7, 2, 'com.selenium.tests.LoginTest')
 data.setCell(7, 3, 275);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'loginWithPasswordEmpty')
+data.setCell(8, 1, 'loginWithEmptyFields')
 data.setCell(8, 2, 'com.selenium.tests.LoginTest')
-data.setCell(8, 3, 272);
+data.setCell(8, 3, 263);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'loginWithEmptyFields')
+data.setCell(9, 1, 'verifyLoginWithMaxChars')
 data.setCell(9, 2, 'com.selenium.tests.LoginTest')
-data.setCell(9, 3, 265);
+data.setCell(9, 3, 205);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'verifyGoToLoginButtonEffect')
 data.setCell(10, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(10, 3, 187);
+data.setCell(10, 3, 189);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyGoToLoginButton')
-data.setCell(11, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(11, 3, 175);
+data.setCell(11, 1, 'loginWithInvalidUsername')
+data.setCell(11, 2, 'com.selenium.tests.LoginTest')
+data.setCell(11, 3, 182);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifyLoginAfterBackendReset')
-data.setCell(12, 2, 'com.selenium.tests.LoginTest')
-data.setCell(12, 3, 161);
+data.setCell(12, 1, 'verifyGoToLoginButton')
+data.setCell(12, 2, 'com.selenium.tests.DashboardTest')
+data.setCell(12, 3, 163);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'verifyBackupStatsVisible')
-data.setCell(13, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(13, 3, 154);
+data.setCell(13, 1, 'verifyLoginAfterBackendReset')
+data.setCell(13, 2, 'com.selenium.tests.LoginTest')
+data.setCell(13, 3, 140);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verifyLoginWithMaxChars')
+data.setCell(14, 1, 'clickSignUpLinkTest')
 data.setCell(14, 2, 'com.selenium.tests.LoginTest')
-data.setCell(14, 3, 148);
+data.setCell(14, 3, 116);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'verifyNoOverlappingElements')
-data.setCell(15, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(15, 3, 146);
+data.setCell(15, 1, 'switchToNewTabOrSameTab')
+data.setCell(15, 2, 'com.selenium.tests.LoginTest')
+data.setCell(15, 3, 112);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'clickSignUpLinkTest')
-data.setCell(16, 2, 'com.selenium.tests.LoginTest')
-data.setCell(16, 3, 138);
+data.setCell(16, 1, 'verifyStatsAlignment')
+data.setCell(16, 2, 'com.selenium.tests.DashboardTest')
+data.setCell(16, 3, 111);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'verifyStatsAlignment')
+data.setCell(17, 1, 'verifyBackupStatsVisible')
 data.setCell(17, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(17, 3, 135);
+data.setCell(17, 3, 107);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'switchToNewTabOrSameTab')
-data.setCell(18, 2, 'com.selenium.tests.LoginTest')
-data.setCell(18, 3, 110);
+data.setCell(18, 1, 'verifyNoOverlappingElements')
+data.setCell(18, 2, 'com.selenium.tests.DashboardTest')
+data.setCell(18, 3, 106);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'loginWithInvalidPassword')
+data.setCell(19, 1, 'loginWithUsernameContainingSpaces')
 data.setCell(19, 2, 'com.selenium.tests.LoginTest')
-data.setCell(19, 3, 106);
+data.setCell(19, 3, 93);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'loginWithUsernameContainingSpaces')
+data.setCell(20, 1, 'loginWithSQLInjection')
 data.setCell(20, 2, 'com.selenium.tests.LoginTest')
-data.setCell(20, 3, 105);
+data.setCell(20, 3, 92);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'loginWithSQLInjection')
+data.setCell(21, 1, 'loginWithInvalidPassword')
 data.setCell(21, 2, 'com.selenium.tests.LoginTest')
-data.setCell(21, 3, 102);
+data.setCell(21, 3, 83);
 data.setCell(22, 0, 22)
 data.setCell(22, 1, 'verifyAllElementsPresent')
 data.setCell(22, 2, 'com.selenium.tests.LoginTest')
-data.setCell(22, 3, 86);
+data.setCell(22, 3, 76);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'verifyAllTextVisible')
+data.setCell(23, 1, 'verifyDashboardHandlesLargeBackupCount')
 data.setCell(23, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(23, 3, 72);
+data.setCell(23, 3, 61);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'verifyDashboardHandlesLargeBackupCount')
+data.setCell(24, 1, 'verifyScreenReaderCompatibility')
 data.setCell(24, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(24, 3, 65);
+data.setCell(24, 3, 59);
 data.setCell(25, 0, 25)
 data.setCell(25, 1, 'verifyDashboardAfterRefresh')
 data.setCell(25, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(25, 3, 61);
+data.setCell(25, 3, 55);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'verifyScreenReaderCompatibility')
+data.setCell(26, 1, 'verifyAllTextVisible')
 data.setCell(26, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(26, 3, 58);
+data.setCell(26, 3, 48);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'loginWithWhitespacePassword')
+data.setCell(27, 1, 'verifyButtonAndLinkVisibility')
 data.setCell(27, 2, 'com.selenium.tests.LoginTest')
 data.setCell(27, 3, 48);
 data.setCell(28, 0, 28)
 data.setCell(28, 1, 'verifyDashboardNavigation')
 data.setCell(28, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(28, 3, 47);
+data.setCell(28, 3, 37);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'verifyButtonAndLinkVisibility')
+data.setCell(29, 1, 'loginWithWhitespacePassword')
 data.setCell(29, 2, 'com.selenium.tests.LoginTest')
-data.setCell(29, 3, 47);
+data.setCell(29, 3, 37);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'verifyAutofillBehavior')
-data.setCell(30, 2, 'com.selenium.tests.LoginTest')
-data.setCell(30, 3, 43);
+data.setCell(30, 1, 'verifyPageHeading')
+data.setCell(30, 2, 'com.selenium.tests.DashboardTest')
+data.setCell(30, 3, 36);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'verifyPageLoadSpeed')
-data.setCell(31, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(31, 3, 40);
+data.setCell(31, 1, 'verifyAutofillBehavior')
+data.setCell(31, 2, 'com.selenium.tests.LoginTest')
+data.setCell(31, 3, 36);
 data.setCell(32, 0, 32)
 data.setCell(32, 1, 'verifyFailedBackupStatus')
 data.setCell(32, 2, 'com.selenium.tests.DashboardTest')
 data.setCell(32, 3, 35);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'verifyPageHeading')
+data.setCell(33, 1, 'verifyPageLoadSpeed')
 data.setCell(33, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(33, 3, 31);
+data.setCell(33, 3, 29);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'verifyFontStyles')
+data.setCell(34, 1, 'verifyPageBackgroundColor')
 data.setCell(34, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(34, 3, 27);
+data.setCell(34, 3, 25);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'verifyPageBackgroundColor')
+data.setCell(35, 1, 'verifyFontStyles')
 data.setCell(35, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(35, 3, 26);
+data.setCell(35, 3, 24);
 data.setCell(36, 0, 36)
 data.setCell(36, 1, 'verifyLabelsVisible')
 data.setCell(36, 2, 'com.selenium.tests.LoginTest')
-data.setCell(36, 3, 18);
+data.setCell(36, 3, 23);
 data.setCell(37, 0, 37)
 data.setCell(37, 1, 'verifyPageTitle')
 data.setCell(37, 2, 'com.selenium.tests.DashboardTest')
-data.setCell(37, 3, 6);
+data.setCell(37, 3, 4);
 data.setCell(38, 0, 38)
 data.setCell(38, 1, 'verifyLoginPageTitle')
 data.setCell(38, 2, 'com.selenium.tests.LoginTest')
@@ -922,612 +978,618 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">1888 ms</span>
+                <span class="method-start">953 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyAllTextVisible</span>
-                <span class="method-start">2535 ms</span>
+                <span class="method-name">verifyBackupTimeReflectsSystemClock</span>
+                <span class="method-start">1515 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">2609 ms</span>
+                <span class="method-start">7461 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">4212 ms</span>
+                <span class="method-start">7928 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">5113 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyAutoRefresh</span>
-                <span class="method-start">5199 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">21258 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">21634 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">goToDashboard</span>
-                <span class="method-start">22465 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyBackupStatsVisible</span>
-                <span class="method-start">22556 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">22710 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">24890 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">goToDashboard</span>
-                <span class="method-start">25761 ms</span>
+                <span class="method-start">8680 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyBackupSummaryConsistency</span>
-                <span class="method-start">25848 ms</span>
+                <span class="method-start">8762 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">66013 ms</span>
+                <span class="method-start">48977 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">66495 ms</span>
+                <span class="method-start">49340 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">67306 ms</span>
+                <span class="method-start">50159 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyBackupTimeReflectsSystemClock</span>
-                <span class="method-start">67393 ms</span>
+                <span class="method-name">verifyAllTextVisible</span>
+                <span class="method-start">50242 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">73323 ms</span>
+                <span class="method-start">50290 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">73801 ms</span>
+                <span class="method-start">52670 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">74627 ms</span>
+                <span class="method-start">53438 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyBackupStatsVisible</span>
+                <span class="method-start">53520 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">53627 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">56001 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">goToDashboard</span>
+                <span class="method-start">56813 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAutoRefresh</span>
+                <span class="method-start">56893 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">72939 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">73306 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">goToDashboard</span>
+                <span class="method-start">74137 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyDashboardAfterRefresh</span>
-                <span class="method-start">74713 ms</span>
+                <span class="method-start">74219 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">74774 ms</span>
+                <span class="method-start">74274 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">77046 ms</span>
+                <span class="method-start">76553 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">77901 ms</span>
+                <span class="method-start">77374 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyDashboardHandlesLargeBackupCount</span>
-                <span class="method-start">77987 ms</span>
+                <span class="method-start">77459 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">78053 ms</span>
+                <span class="method-start">77520 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">80345 ms</span>
+                <span class="method-start">79786 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">81168 ms</span>
+                <span class="method-start">80732 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyDashboardNavigation</span>
-                <span class="method-start">81253 ms</span>
+                <span class="method-start">80814 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">81300 ms</span>
+                <span class="method-start">80852 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">83678 ms</span>
+                <span class="method-start">83131 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">84494 ms</span>
+                <span class="method-start">83989 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyFailedBackupStatus</span>
-                <span class="method-start">84589 ms</span>
+                <span class="method-start">84076 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">84624 ms</span>
+                <span class="method-start">84111 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">87003 ms</span>
+                <span class="method-start">86384 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">87806 ms</span>
+                <span class="method-start">87198 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyFontStyles</span>
-                <span class="method-start">87892 ms</span>
+                <span class="method-start">87280 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">87919 ms</span>
+                <span class="method-start">87305 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">90289 ms</span>
+                <span class="method-start">89675 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">91118 ms</span>
+                <span class="method-start">90542 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyGoToLoginButton</span>
-                <span class="method-start">91204 ms</span>
+                <span class="method-start">90622 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">91379 ms</span>
+                <span class="method-start">90786 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">93546 ms</span>
+                <span class="method-start">92966 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">94525 ms</span>
+                <span class="method-start">93818 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyGoToLoginButtonEffect</span>
-                <span class="method-start">94614 ms</span>
+                <span class="method-start">93910 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">94801 ms</span>
+                <span class="method-start">94099 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">96893 ms</span>
+                <span class="method-start">96274 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">97811 ms</span>
+                <span class="method-start">97145 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNoOverlappingElements</span>
-                <span class="method-start">97906 ms</span>
+                <span class="method-start">97228 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">98052 ms</span>
+                <span class="method-start">97334 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">100147 ms</span>
+                <span class="method-start">99618 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">101024 ms</span>
+                <span class="method-start">100378 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyPageBackgroundColor</span>
-                <span class="method-start">101116 ms</span>
+                <span class="method-start">100454 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">101143 ms</span>
+                <span class="method-start">100479 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">103421 ms</span>
+                <span class="method-start">102844 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">104284 ms</span>
+                <span class="method-start">103608 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyPageHeading</span>
-                <span class="method-start">104373 ms</span>
+                <span class="method-start">103687 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">104404 ms</span>
+                <span class="method-start">103723 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">107579 ms</span>
+                <span class="method-start">106862 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyPageLoadSpeed</span>
-                <span class="method-start">107672 ms</span>
+                <span class="method-start">106949 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">107712 ms</span>
+                <span class="method-start">106979 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">110861 ms</span>
+                <span class="method-start">110149 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyPageTitle</span>
-                <span class="method-start">110944 ms</span>
+                <span class="method-start">110229 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">110951 ms</span>
+                <span class="method-start">110233 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">114071 ms</span>
+                <span class="method-start">113364 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyScreenReaderCompatibility</span>
-                <span class="method-start">114155 ms</span>
+                <span class="method-start">113450 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">114213 ms</span>
+                <span class="method-start">113510 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">goToDashboard</span>
-                <span class="method-start">117309 ms</span>
+                <span class="method-start">116662 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyStatsAlignment</span>
-                <span class="method-start">117390 ms</span>
+                <span class="method-start">116746 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">117525 ms</span>
+                <span class="method-start">116857 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.selenium.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">119808 ms</span>
+                <span class="method-start">119137 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">119808 ms</span>
+                <span class="method-start">119137 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">119808 ms</span>
+                <span class="method-start">119137 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">119808 ms</span>
+                <span class="method-start">119137 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">119808 ms</span>
+                <span class="method-start">119137 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">120668 ms</span>
+                <span class="method-start">119925 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithInvalidUsername</span>
-                <span class="method-start">120769 ms</span>
+                <span class="method-start">120015 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">121135 ms</span>
+                <span class="method-start">120197 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">123111 ms</span>
+                <span class="method-start">122477 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">123970 ms</span>
+                <span class="method-start">123241 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithPasswordEmpty</span>
-                <span class="method-start">124088 ms</span>
+                <span class="method-start">123333 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">124360 ms</span>
+                <span class="method-start">123609 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">126434 ms</span>
+                <span class="method-start">125781 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">127281 ms</span>
+                <span class="method-start">126544 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickSignUpLinkTest</span>
-                <span class="method-start">127388 ms</span>
+                <span class="method-start">126632 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">127527 ms</span>
+                <span class="method-start">126749 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">129701 ms</span>
+                <span class="method-start">129025 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">130540 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginWithInvalidPassword</span>
-                <span class="method-start">130640 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">130746 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">133020 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">133846 ms</span>
+                <span class="method-start">129838 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithEmptyFields</span>
-                <span class="method-start">133952 ms</span>
+                <span class="method-start">129933 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">134218 ms</span>
+                <span class="method-start">130196 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">136288 ms</span>
+                <span class="method-start">132361 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">137113 ms</span>
+                <span class="method-start">133164 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithInvalidPassword</span>
+                <span class="method-start">133255 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">133338 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">135612 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">136399 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithSQLInjection</span>
-                <span class="method-start">137208 ms</span>
+                <span class="method-start">136490 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">137310 ms</span>
+                <span class="method-start">136582 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">139593 ms</span>
+                <span class="method-start">138852 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">140474 ms</span>
+                <span class="method-start">139693 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithUsernameContainingSpaces</span>
-                <span class="method-start">140582 ms</span>
+                <span class="method-start">139783 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">140687 ms</span>
+                <span class="method-start">139877 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">142861 ms</span>
+                <span class="method-start">142154 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">143677 ms</span>
+                <span class="method-start">142984 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithUsernameEmpty</span>
-                <span class="method-start">143770 ms</span>
+                <span class="method-start">143078 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">144046 ms</span>
+                <span class="method-start">143354 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">146116 ms</span>
+                <span class="method-start">145420 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">146979 ms</span>
+                <span class="method-start">146218 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">loginWithValidCredentials</span>
-                <span class="method-start">147073 ms</span>
+                <span class="method-start">146315 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">147851 ms</span>
+                <span class="method-start">156561 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">149429 ms</span>
+                <span class="method-start">156943 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">150230 ms</span>
+                <span class="method-start">157787 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithWhitespacePassword</span>
-                <span class="method-start">150331 ms</span>
+                <span class="method-start">157881 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">150379 ms</span>
+                <span class="method-start">157919 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">152754 ms</span>
+                <span class="method-start">160199 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">153621 ms</span>
+                <span class="method-start">161037 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">switchToNewTabOrSameTab</span>
-                <span class="method-start">153725 ms</span>
+                <span class="method-start">161135 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">153835 ms</span>
+                <span class="method-start">161247 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">156005 ms</span>
+                <span class="method-start">163523 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">156824 ms</span>
+                <span class="method-start">164334 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAllElementsPresent</span>
-                <span class="method-start">156932 ms</span>
+                <span class="method-start">164423 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">157019 ms</span>
+                <span class="method-start">164500 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">159299 ms</span>
+                <span class="method-start">166773 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">160224 ms</span>
+                <span class="method-start">167524 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAutofillBehavior</span>
-                <span class="method-start">160327 ms</span>
+                <span class="method-start">167610 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">160371 ms</span>
+                <span class="method-start">167647 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">162555 ms</span>
+                <span class="method-start">170015 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">163446 ms</span>
+                <span class="method-start">170754 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyButtonAndLinkVisibility</span>
-                <span class="method-start">163547 ms</span>
+                <span class="method-start">170845 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">163594 ms</span>
+                <span class="method-start">170894 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">165865 ms</span>
+                <span class="method-start">173255 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">166718 ms</span>
+                <span class="method-start">174026 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyKeyboardNavigationLogin</span>
-                <span class="method-start">166814 ms</span>
+                <span class="method-start">174117 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">167462 ms</span>
+                <span class="method-start">184357 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">169139 ms</span>
+                <span class="method-start">184718 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">169981 ms</span>
+                <span class="method-start">185472 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLabelsVisible</span>
-                <span class="method-start">170079 ms</span>
+                <span class="method-start">185567 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">170098 ms</span>
+                <span class="method-start">185591 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">173309 ms</span>
+                <span class="method-start">188745 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginAfterBackendReset</span>
-                <span class="method-start">173406 ms</span>
+                <span class="method-start">188828 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">173568 ms</span>
+                <span class="method-start">188968 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">176553 ms</span>
+                <span class="method-start">191988 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyLoginAfterPasswordChange</span>
-                <span class="method-start">176647 ms</span>
+                <span class="method-start">192080 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">177412 ms</span>
+                <span class="method-start">207383 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">179828 ms</span>
+                <span class="method-start">208527 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginPageTitle</span>
-                <span class="method-start">179919 ms</span>
+                <span class="method-start">208620 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">179922 ms</span>
+                <span class="method-start">208623 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">183099 ms</span>
+                <span class="method-start">211740 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithMaxChars</span>
-                <span class="method-start">183201 ms</span>
+                <span class="method-start">211829 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">183349 ms</span>
+                <span class="method-start">212034 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

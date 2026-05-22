@@ -10,7 +10,7 @@ services:
       - shared-data:/data
     environment:
       - TZ=Asia/Kolkata
-      - DB_HOST=mysql-db1
+      - DB_HOST=mysql
       - DB_PORT=3306
     networks:
       - selenium-grid

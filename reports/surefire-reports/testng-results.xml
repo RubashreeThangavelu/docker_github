@@ -1,103 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="39" passed="38" failed="1" skipped="0">
+<testng-results ignored="0" total="39" passed="35" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-22T07:08:44 IST" name="BackupSuite" finished-at="2026-05-22T07:11:50 IST" duration-ms="185654">
+  <suite started-at="2026-05-22T07:29:29 IST" name="BackupSuite" finished-at="2026-05-22T07:33:03 IST" duration-ms="214322">
     <groups>
     </groups>
-    <test started-at="2026-05-22T07:08:44 IST" name="BaseTest" finished-at="2026-05-22T07:08:44 IST" duration-ms="4">
+    <test started-at="2026-05-22T07:29:29 IST" name="BaseTest" finished-at="2026-05-22T07:29:29 IST" duration-ms="4">
     </test> <!-- BaseTest -->
-    <test started-at="2026-05-22T07:08:44 IST" name="Dashboard" finished-at="2026-05-22T07:10:44 IST" duration-ms="119816">
+    <test started-at="2026-05-22T07:29:29 IST" name="Dashboard" finished-at="2026-05-22T07:31:28 IST" duration-ms="119145">
       <class name="com.selenium.tests.DashboardTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:08:44 IST" name="setUp" finished-at="2026-05-22T07:08:49 IST" duration-ms="5113" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:29:29 IST" name="setUp" finished-at="2026-05-22T07:30:22 IST" duration-ms="53437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:08:44 IST" name="setUp" finished-at="2026-05-22T07:09:06 IST" duration-ms="22465" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:29:29 IST" name="setUp" finished-at="2026-05-22T07:29:37 IST" duration-ms="8680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:08:44 IST" name="setUp" finished-at="2026-05-22T07:08:46 IST" duration-ms="1888" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:29:29 IST" name="setUp" finished-at="2026-05-22T07:29:30 IST" duration-ms="953" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:08:44 IST" name="setUp" finished-at="2026-05-22T07:09:10 IST" duration-ms="25761" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:29:29 IST" name="setUp" finished-at="2026-05-22T07:30:26 IST" duration-ms="56813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:08:44 IST" name="setUp" finished-at="2026-05-22T07:09:51 IST" duration-ms="67306" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:29:29 IST" name="setUp" finished-at="2026-05-22T07:30:19 IST" duration-ms="50158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:08:46 IST" name="goToDashboard" finished-at="2026-05-22T07:08:46 IST" duration-ms="647" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:29:30 IST" name="goToDashboard" finished-at="2026-05-22T07:29:30 IST" duration-ms="562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyAllTextVisible()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:08:46 IST" name="verifyAllTextVisible" finished-at="2026-05-22T07:08:47 IST" duration-ms="72" status="PASS">
+        <test-method signature="verifyBackupTimeReflectsSystemClock()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:29:30 IST" name="verifyBackupTimeReflectsSystemClock" finished-at="2026-05-22T07:29:36 IST" duration-ms="5944" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAllTextVisible -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:08:47 IST" name="tearDown" finished-at="2026-05-22T07:08:48 IST" duration-ms="1602" status="PASS">
+        </test-method> <!-- verifyBackupTimeReflectsSystemClock -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:29:36 IST" name="tearDown" finished-at="2026-05-22T07:29:37 IST" duration-ms="466" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:08:48 IST" name="setUp" finished-at="2026-05-22T07:09:59 IST" duration-ms="70415" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:29:37 IST" name="setUp" finished-at="2026-05-22T07:30:43 IST" duration-ms="66209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:08:49 IST" name="goToDashboard" finished-at="2026-05-22T07:08:49 IST" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:29:37 IST" name="goToDashboard" finished-at="2026-05-22T07:29:38 IST" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyAutoRefresh()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:08:49 IST" name="verifyAutoRefresh" finished-at="2026-05-22T07:09:05 IST" duration-ms="16059" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAutoRefresh -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:05 IST" name="tearDown" finished-at="2026-05-22T07:09:06 IST" duration-ms="376" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:06 IST" name="setUp" finished-at="2026-05-22T07:10:02 IST" duration-ms="56267" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:06 IST" name="goToDashboard" finished-at="2026-05-22T07:09:06 IST" duration-ms="91" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyBackupStatsVisible()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:06 IST" name="verifyBackupStatsVisible" finished-at="2026-05-22T07:09:07 IST" duration-ms="154" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBackupStatsVisible -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:07 IST" name="tearDown" finished-at="2026-05-22T07:09:09 IST" duration-ms="2179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:09 IST" name="setUp" finished-at="2026-05-22T07:10:05 IST" duration-ms="56278" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:10 IST" name="goToDashboard" finished-at="2026-05-22T07:09:10 IST" duration-ms="87" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyBackupSummaryConsistency()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:10 IST" name="verifyBackupSummaryConsistency" finished-at="2026-05-22T07:09:50 IST" duration-ms="40163" status="FAIL">
+        <test-method signature="verifyBackupSummaryConsistency()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:29:38 IST" name="verifyBackupSummaryConsistency" finished-at="2026-05-22T07:30:18 IST" duration-ms="40214" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //p[strong[contains(text(),'Last File:')]] (tried for 40 second(s) with 500 milliseconds interval)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-29-generic', java.version: '21.0.3'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:23147, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 1052, moz:profile: /tmp/rust_mozprofilelSmlCA, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 49198fc0-0438-4209-a2f4-3d3b80340396]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:32463, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 10673, moz:profile: /tmp/rust_mozprofileb99iWx, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4f955d8c-f6d9-4472-9da3-7b3bdeab2181]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[strong[contains(text(),'Last File:')]] (tried for 40 second(s) with 500 milliseconds interval)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-29-generic', java.version: '21.0.3'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:23147, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 1052, moz:profile: /tmp/rust_mozprofilelSmlCA, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 49198fc0-0438-4209-a2f4-3d3b80340396
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:32463, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 10673, moz:profile: /tmp/rust_mozprofileb99iWx, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4f955d8c-f6d9-4472-9da3-7b3bdeab2181
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 at com.selenium.tests.DashboardTest.verifyBackupSummaryConsistency(DashboardTest.java:311)
@@ -123,555 +91,701 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBackupSummaryConsistency -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:50 IST" name="tearDown" finished-at="2026-05-22T07:09:50 IST" duration-ms="481" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:18 IST" name="tearDown" finished-at="2026-05-22T07:30:18 IST" duration-ms="362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:50 IST" name="setUp" finished-at="2026-05-22T07:10:08 IST" duration-ms="17999" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:18 IST" name="setUp" finished-at="2026-05-22T07:30:46 IST" duration-ms="28034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:51 IST" name="goToDashboard" finished-at="2026-05-22T07:09:51 IST" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:19 IST" name="goToDashboard" finished-at="2026-05-22T07:30:19 IST" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyBackupTimeReflectsSystemClock()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:51 IST" name="verifyBackupTimeReflectsSystemClock" finished-at="2026-05-22T07:09:57 IST" duration-ms="5930" status="PASS">
+        <test-method signature="verifyAllTextVisible()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:19 IST" name="verifyAllTextVisible" finished-at="2026-05-22T07:30:19 IST" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyBackupTimeReflectsSystemClock -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:57 IST" name="tearDown" finished-at="2026-05-22T07:09:58 IST" duration-ms="477" status="PASS">
+        </test-method> <!-- verifyAllTextVisible -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:19 IST" name="tearDown" finished-at="2026-05-22T07:30:21 IST" duration-ms="2380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:58 IST" name="setUp" finished-at="2026-05-22T07:10:12 IST" duration-ms="14005" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:21 IST" name="setUp" finished-at="2026-05-22T07:30:49 IST" duration-ms="28062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:59 IST" name="goToDashboard" finished-at="2026-05-22T07:09:59 IST" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:22 IST" name="goToDashboard" finished-at="2026-05-22T07:30:22 IST" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyDashboardAfterRefresh()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:59 IST" name="verifyDashboardAfterRefresh" finished-at="2026-05-22T07:09:59 IST" duration-ms="61" status="PASS">
+        <test-method signature="verifyBackupStatsVisible()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:22 IST" name="verifyBackupStatsVisible" finished-at="2026-05-22T07:30:22 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBackupStatsVisible -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:22 IST" name="tearDown" finished-at="2026-05-22T07:30:25 IST" duration-ms="2373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:25 IST" name="setUp" finished-at="2026-05-22T07:30:53 IST" duration-ms="27988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:26 IST" name="goToDashboard" finished-at="2026-05-22T07:30:26 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToDashboard -->
+        <test-method signature="verifyAutoRefresh()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:26 IST" name="verifyAutoRefresh" finished-at="2026-05-22T07:30:42 IST" duration-ms="16045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAutoRefresh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:42 IST" name="tearDown" finished-at="2026-05-22T07:30:42 IST" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:42 IST" name="setUp" finished-at="2026-05-22T07:30:56 IST" duration-ms="13892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:43 IST" name="goToDashboard" finished-at="2026-05-22T07:30:43 IST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToDashboard -->
+        <test-method signature="verifyDashboardAfterRefresh()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:43 IST" name="verifyDashboardAfterRefresh" finished-at="2026-05-22T07:30:43 IST" duration-ms="55" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDashboardAfterRefresh -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:09:59 IST" name="tearDown" finished-at="2026-05-22T07:10:01 IST" duration-ms="2272" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:43 IST" name="tearDown" finished-at="2026-05-22T07:30:45 IST" duration-ms="2278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:01 IST" name="setUp" finished-at="2026-05-22T07:10:15 IST" duration-ms="14072" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:45 IST" name="setUp" finished-at="2026-05-22T07:30:59 IST" duration-ms="13989" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:02 IST" name="goToDashboard" finished-at="2026-05-22T07:10:02 IST" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:46 IST" name="goToDashboard" finished-at="2026-05-22T07:30:46 IST" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyDashboardHandlesLargeBackupCount()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:02 IST" name="verifyDashboardHandlesLargeBackupCount" finished-at="2026-05-22T07:10:02 IST" duration-ms="65" status="PASS">
+        <test-method signature="verifyDashboardHandlesLargeBackupCount()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:46 IST" name="verifyDashboardHandlesLargeBackupCount" finished-at="2026-05-22T07:30:46 IST" duration-ms="61" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDashboardHandlesLargeBackupCount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:02 IST" name="tearDown" finished-at="2026-05-22T07:10:04 IST" duration-ms="2291" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:46 IST" name="tearDown" finished-at="2026-05-22T07:30:49 IST" duration-ms="2266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:04 IST" name="setUp" finished-at="2026-05-22T07:10:18 IST" duration-ms="14180" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:49 IST" name="setUp" finished-at="2026-05-22T07:31:03 IST" duration-ms="14032" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:05 IST" name="goToDashboard" finished-at="2026-05-22T07:10:05 IST" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:49 IST" name="goToDashboard" finished-at="2026-05-22T07:30:50 IST" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyDashboardNavigation()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:05 IST" name="verifyDashboardNavigation" finished-at="2026-05-22T07:10:05 IST" duration-ms="47" status="PASS">
+        <test-method signature="verifyDashboardNavigation()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:50 IST" name="verifyDashboardNavigation" finished-at="2026-05-22T07:30:50 IST" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDashboardNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:05 IST" name="tearDown" finished-at="2026-05-22T07:10:08 IST" duration-ms="2377" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:50 IST" name="tearDown" finished-at="2026-05-22T07:30:52 IST" duration-ms="2278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:08 IST" name="setUp" finished-at="2026-05-22T07:10:22 IST" duration-ms="14133" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:52 IST" name="setUp" finished-at="2026-05-22T07:31:06 IST" duration-ms="14013" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:08 IST" name="goToDashboard" finished-at="2026-05-22T07:10:09 IST" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:53 IST" name="goToDashboard" finished-at="2026-05-22T07:30:53 IST" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyFailedBackupStatus()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:09 IST" name="verifyFailedBackupStatus" finished-at="2026-05-22T07:10:09 IST" duration-ms="35" status="PASS">
+        <test-method signature="verifyFailedBackupStatus()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:53 IST" name="verifyFailedBackupStatus" finished-at="2026-05-22T07:30:53 IST" duration-ms="35" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFailedBackupStatus -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:09 IST" name="tearDown" finished-at="2026-05-22T07:10:11 IST" duration-ms="2379" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:53 IST" name="tearDown" finished-at="2026-05-22T07:30:55 IST" duration-ms="2272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:11 IST" name="setUp" finished-at="2026-05-22T07:10:25 IST" duration-ms="14021" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:55 IST" name="setUp" finished-at="2026-05-22T07:31:09 IST" duration-ms="13994" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:12 IST" name="goToDashboard" finished-at="2026-05-22T07:10:12 IST" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:56 IST" name="goToDashboard" finished-at="2026-05-22T07:30:56 IST" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyFontStyles()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:12 IST" name="verifyFontStyles" finished-at="2026-05-22T07:10:12 IST" duration-ms="27" status="PASS">
+        <test-method signature="verifyFontStyles()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:56 IST" name="verifyFontStyles" finished-at="2026-05-22T07:30:56 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFontStyles -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:12 IST" name="tearDown" finished-at="2026-05-22T07:10:14 IST" duration-ms="2370" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:56 IST" name="tearDown" finished-at="2026-05-22T07:30:58 IST" duration-ms="2369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:14 IST" name="setUp" finished-at="2026-05-22T07:10:28 IST" duration-ms="13995" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:58 IST" name="setUp" finished-at="2026-05-22T07:31:12 IST" duration-ms="13933" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:15 IST" name="goToDashboard" finished-at="2026-05-22T07:10:15 IST" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:59 IST" name="goToDashboard" finished-at="2026-05-22T07:30:59 IST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyGoToLoginButton()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:15 IST" name="verifyGoToLoginButton" finished-at="2026-05-22T07:10:15 IST" duration-ms="175" status="PASS">
+        <test-method signature="verifyGoToLoginButton()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:30:59 IST" name="verifyGoToLoginButton" finished-at="2026-05-22T07:31:00 IST" duration-ms="163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGoToLoginButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:15 IST" name="tearDown" finished-at="2026-05-22T07:10:17 IST" duration-ms="2166" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:00 IST" name="tearDown" finished-at="2026-05-22T07:31:02 IST" duration-ms="2179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:17 IST" name="setUp" finished-at="2026-05-22T07:10:32 IST" duration-ms="14033" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:02 IST" name="setUp" finished-at="2026-05-22T07:31:16 IST" duration-ms="13896" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:18 IST" name="goToDashboard" finished-at="2026-05-22T07:10:19 IST" duration-ms="89" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:03 IST" name="goToDashboard" finished-at="2026-05-22T07:31:03 IST" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyGoToLoginButtonEffect()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:19 IST" name="verifyGoToLoginButtonEffect" finished-at="2026-05-22T07:10:19 IST" duration-ms="187" status="PASS">
+        <test-method signature="verifyGoToLoginButtonEffect()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:03 IST" name="verifyGoToLoginButtonEffect" finished-at="2026-05-22T07:31:03 IST" duration-ms="189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGoToLoginButtonEffect -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:19 IST" name="tearDown" finished-at="2026-05-22T07:10:21 IST" duration-ms="2091" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:03 IST" name="tearDown" finished-at="2026-05-22T07:31:05 IST" duration-ms="2175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:21 IST" name="setUp" finished-at="2026-05-22T07:10:35 IST" duration-ms="13968" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:05 IST" name="setUp" finished-at="2026-05-22T07:31:19 IST" duration-ms="13874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:22 IST" name="goToDashboard" finished-at="2026-05-22T07:10:22 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:06 IST" name="goToDashboard" finished-at="2026-05-22T07:31:06 IST" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyNoOverlappingElements()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:22 IST" name="verifyNoOverlappingElements" finished-at="2026-05-22T07:10:22 IST" duration-ms="146" status="PASS">
+        <test-method signature="verifyNoOverlappingElements()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:06 IST" name="verifyNoOverlappingElements" finished-at="2026-05-22T07:31:06 IST" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNoOverlappingElements -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:22 IST" name="tearDown" finished-at="2026-05-22T07:10:24 IST" duration-ms="2095" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:06 IST" name="tearDown" finished-at="2026-05-22T07:31:08 IST" duration-ms="2283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:24 IST" name="setUp" finished-at="2026-05-22T07:10:38 IST" duration-ms="13924" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:08 IST" name="setUp" finished-at="2026-05-22T07:31:22 IST" duration-ms="13746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:25 IST" name="goToDashboard" finished-at="2026-05-22T07:10:25 IST" duration-ms="92" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:09 IST" name="goToDashboard" finished-at="2026-05-22T07:31:09 IST" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyPageBackgroundColor()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:25 IST" name="verifyPageBackgroundColor" finished-at="2026-05-22T07:10:25 IST" duration-ms="26" status="PASS">
+        <test-method signature="verifyPageBackgroundColor()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:09 IST" name="verifyPageBackgroundColor" finished-at="2026-05-22T07:31:09 IST" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageBackgroundColor -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:25 IST" name="tearDown" finished-at="2026-05-22T07:10:27 IST" duration-ms="2278" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:09 IST" name="tearDown" finished-at="2026-05-22T07:31:12 IST" duration-ms="2364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:27 IST" name="setUp" finished-at="2026-05-22T07:10:41 IST" duration-ms="13888" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:12 IST" name="setUp" finished-at="2026-05-22T07:31:25 IST" duration-ms="13818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:28 IST" name="goToDashboard" finished-at="2026-05-22T07:10:28 IST" duration-ms="89" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:12 IST" name="goToDashboard" finished-at="2026-05-22T07:31:12 IST" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyPageHeading()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:28 IST" name="verifyPageHeading" finished-at="2026-05-22T07:10:28 IST" duration-ms="31" status="PASS">
+        <test-method signature="verifyPageHeading()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:12 IST" name="verifyPageHeading" finished-at="2026-05-22T07:31:12 IST" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageHeading -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:28 IST" name="tearDown" finished-at="2026-05-22T07:10:31 IST" duration-ms="2299" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:12 IST" name="tearDown" finished-at="2026-05-22T07:31:15 IST" duration-ms="2368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:32 IST" name="goToDashboard" finished-at="2026-05-22T07:10:32 IST" duration-ms="93" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:16 IST" name="goToDashboard" finished-at="2026-05-22T07:31:16 IST" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyPageLoadSpeed()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:32 IST" name="verifyPageLoadSpeed" finished-at="2026-05-22T07:10:32 IST" duration-ms="40" status="PASS">
+        <test-method signature="verifyPageLoadSpeed()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:16 IST" name="verifyPageLoadSpeed" finished-at="2026-05-22T07:31:16 IST" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageLoadSpeed -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:32 IST" name="tearDown" finished-at="2026-05-22T07:10:34 IST" duration-ms="2277" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:16 IST" name="tearDown" finished-at="2026-05-22T07:31:18 IST" duration-ms="2368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:35 IST" name="goToDashboard" finished-at="2026-05-22T07:10:35 IST" duration-ms="83" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:19 IST" name="goToDashboard" finished-at="2026-05-22T07:31:19 IST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyPageTitle()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:35 IST" name="verifyPageTitle" finished-at="2026-05-22T07:10:35 IST" duration-ms="6" status="PASS">
+        <test-method signature="verifyPageTitle()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:19 IST" name="verifyPageTitle" finished-at="2026-05-22T07:31:19 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:35 IST" name="tearDown" finished-at="2026-05-22T07:10:37 IST" duration-ms="2282" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:19 IST" name="tearDown" finished-at="2026-05-22T07:31:21 IST" duration-ms="2379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:38 IST" name="goToDashboard" finished-at="2026-05-22T07:10:38 IST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:22 IST" name="goToDashboard" finished-at="2026-05-22T07:31:22 IST" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyScreenReaderCompatibility()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:38 IST" name="verifyScreenReaderCompatibility" finished-at="2026-05-22T07:10:38 IST" duration-ms="58" status="PASS">
+        <test-method signature="verifyScreenReaderCompatibility()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:22 IST" name="verifyScreenReaderCompatibility" finished-at="2026-05-22T07:31:22 IST" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyScreenReaderCompatibility -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:38 IST" name="tearDown" finished-at="2026-05-22T07:10:40 IST" duration-ms="2278" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:22 IST" name="tearDown" finished-at="2026-05-22T07:31:25 IST" duration-ms="2361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:41 IST" name="goToDashboard" finished-at="2026-05-22T07:10:41 IST" duration-ms="81" status="PASS">
+        <test-method is-config="true" signature="goToDashboard()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:25 IST" name="goToDashboard" finished-at="2026-05-22T07:31:25 IST" duration-ms="84" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToDashboard -->
-        <test-method signature="verifyStatsAlignment()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:41 IST" name="verifyStatsAlignment" finished-at="2026-05-22T07:10:41 IST" duration-ms="135" status="PASS">
+        <test-method signature="verifyStatsAlignment()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:25 IST" name="verifyStatsAlignment" finished-at="2026-05-22T07:31:26 IST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyStatsAlignment -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:10:41 IST" name="tearDown" finished-at="2026-05-22T07:10:44 IST" duration-ms="2275" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.DashboardTest@fa200ab]" started-at="2026-05-22T07:31:26 IST" name="tearDown" finished-at="2026-05-22T07:31:28 IST" duration-ms="2274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.selenium.tests.DashboardTest -->
     </test> <!-- Dashboard -->
-    <test started-at="2026-05-22T07:10:44 IST" name="Login" finished-at="2026-05-22T07:11:50 IST" duration-ms="65821">
+    <test started-at="2026-05-22T07:31:28 IST" name="Login" finished-at="2026-05-22T07:33:03 IST" duration-ms="95161">
       <class name="com.selenium.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:44 IST" name="setUp" finished-at="2026-05-22T07:10:45 IST" duration-ms="860" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:28 IST" name="setUp" finished-at="2026-05-22T07:31:29 IST" duration-ms="788" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:44 IST" name="setUp" finished-at="2026-05-22T07:10:51 IST" duration-ms="7473" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:28 IST" name="setUp" finished-at="2026-05-22T07:31:32 IST" duration-ms="4104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:44 IST" name="setUp" finished-at="2026-05-22T07:10:54 IST" duration-ms="10732" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:28 IST" name="setUp" finished-at="2026-05-22T07:31:42 IST" duration-ms="14027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:44 IST" name="setUp" finished-at="2026-05-22T07:10:48 IST" duration-ms="4162" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:28 IST" name="setUp" finished-at="2026-05-22T07:31:39 IST" duration-ms="10701" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:44 IST" name="setUp" finished-at="2026-05-22T07:10:58 IST" duration-ms="14038" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:28 IST" name="setUp" finished-at="2026-05-22T07:31:35 IST" duration-ms="7407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:45 IST" name="setup" finished-at="2026-05-22T07:10:45 IST" duration-ms="101" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:29 IST" name="setup" finished-at="2026-05-22T07:31:29 IST" duration-ms="90" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithInvalidUsername()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:45 IST" name="loginWithInvalidUsername" finished-at="2026-05-22T07:10:45 IST" duration-ms="366" status="PASS">
+        <test-method signature="loginWithInvalidUsername()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:29 IST" name="loginWithInvalidUsername" finished-at="2026-05-22T07:31:29 IST" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInvalidUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:45 IST" name="tearDown" finished-at="2026-05-22T07:10:47 IST" duration-ms="1975" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:29 IST" name="tearDown" finished-at="2026-05-22T07:31:31 IST" duration-ms="2280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:47 IST" name="setUp" finished-at="2026-05-22T07:11:01 IST" duration-ms="14002" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:31 IST" name="setUp" finished-at="2026-05-22T07:31:45 IST" duration-ms="13922" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:48 IST" name="setup" finished-at="2026-05-22T07:10:48 IST" duration-ms="118" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:32 IST" name="setup" finished-at="2026-05-22T07:31:32 IST" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithPasswordEmpty()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:48 IST" name="loginWithPasswordEmpty" finished-at="2026-05-22T07:10:48 IST" duration-ms="272" status="PASS">
+        <test-method signature="loginWithPasswordEmpty()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:32 IST" name="loginWithPasswordEmpty" finished-at="2026-05-22T07:31:32 IST" duration-ms="275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithPasswordEmpty -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:48 IST" name="tearDown" finished-at="2026-05-22T07:10:50 IST" duration-ms="2073" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:32 IST" name="tearDown" finished-at="2026-05-22T07:31:35 IST" duration-ms="2171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:50 IST" name="setUp" finished-at="2026-05-22T07:11:04 IST" duration-ms="14040" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:35 IST" name="setUp" finished-at="2026-05-22T07:31:48 IST" duration-ms="13912" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:51 IST" name="setup" finished-at="2026-05-22T07:10:51 IST" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:35 IST" name="setup" finished-at="2026-05-22T07:31:35 IST" duration-ms="88" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="clickSignUpLinkTest()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:51 IST" name="clickSignUpLinkTest" finished-at="2026-05-22T07:10:51 IST" duration-ms="138" status="PASS">
+        <test-method signature="clickSignUpLinkTest()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:35 IST" name="clickSignUpLinkTest" finished-at="2026-05-22T07:31:35 IST" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSignUpLinkTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:51 IST" name="tearDown" finished-at="2026-05-22T07:10:54 IST" duration-ms="2173" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:35 IST" name="tearDown" finished-at="2026-05-22T07:31:38 IST" duration-ms="2276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:54 IST" name="setUp" finished-at="2026-05-22T07:11:08 IST" duration-ms="13976" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:38 IST" name="setUp" finished-at="2026-05-22T07:31:52 IST" duration-ms="13959" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:54 IST" name="setup" finished-at="2026-05-22T07:10:55 IST" duration-ms="99" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:39 IST" name="setup" finished-at="2026-05-22T07:31:39 IST" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithInvalidPassword()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:55 IST" name="loginWithInvalidPassword" finished-at="2026-05-22T07:10:55 IST" duration-ms="106" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:55 IST" name="tearDown" finished-at="2026-05-22T07:10:57 IST" duration-ms="2273" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:57 IST" name="setUp" finished-at="2026-05-22T07:11:11 IST" duration-ms="13959" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:58 IST" name="setup" finished-at="2026-05-22T07:10:58 IST" duration-ms="106" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginWithEmptyFields()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:58 IST" name="loginWithEmptyFields" finished-at="2026-05-22T07:10:58 IST" duration-ms="265" status="PASS">
+        <test-method signature="loginWithEmptyFields()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:39 IST" name="loginWithEmptyFields" finished-at="2026-05-22T07:31:39 IST" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithEmptyFields -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:10:58 IST" name="tearDown" finished-at="2026-05-22T07:11:00 IST" duration-ms="2070" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:39 IST" name="tearDown" finished-at="2026-05-22T07:31:41 IST" duration-ms="2165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:00 IST" name="setUp" finished-at="2026-05-22T07:11:14 IST" duration-ms="13942" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:41 IST" name="setUp" finished-at="2026-05-22T07:31:55 IST" duration-ms="13857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:01 IST" name="setup" finished-at="2026-05-22T07:11:01 IST" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:42 IST" name="setup" finished-at="2026-05-22T07:31:42 IST" duration-ms="90" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithSQLInjection()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:01 IST" name="loginWithSQLInjection" finished-at="2026-05-22T07:11:01 IST" duration-ms="102" status="PASS">
+        <test-method signature="loginWithInvalidPassword()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:42 IST" name="loginWithInvalidPassword" finished-at="2026-05-22T07:31:42 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:42 IST" name="tearDown" finished-at="2026-05-22T07:31:44 IST" duration-ms="2273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:44 IST" name="setUp" finished-at="2026-05-22T07:32:07 IST" duration-ms="22175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:45 IST" name="setup" finished-at="2026-05-22T07:31:45 IST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithSQLInjection()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:45 IST" name="loginWithSQLInjection" finished-at="2026-05-22T07:31:45 IST" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithSQLInjection -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:01 IST" name="tearDown" finished-at="2026-05-22T07:11:04 IST" duration-ms="2283" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:45 IST" name="tearDown" finished-at="2026-05-22T07:31:48 IST" duration-ms="2269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:04 IST" name="setUp" finished-at="2026-05-22T07:11:18 IST" duration-ms="14028" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:48 IST" name="setUp" finished-at="2026-05-22T07:32:10 IST" duration-ms="22185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:04 IST" name="setup" finished-at="2026-05-22T07:11:05 IST" duration-ms="108" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:48 IST" name="setup" finished-at="2026-05-22T07:31:49 IST" duration-ms="90" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithUsernameContainingSpaces()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:05 IST" name="loginWithUsernameContainingSpaces" finished-at="2026-05-22T07:11:05 IST" duration-ms="105" status="PASS">
+        <test-method signature="loginWithUsernameContainingSpaces()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:49 IST" name="loginWithUsernameContainingSpaces" finished-at="2026-05-22T07:31:49 IST" duration-ms="93" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithUsernameContainingSpaces -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:05 IST" name="tearDown" finished-at="2026-05-22T07:11:07 IST" duration-ms="2174" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:49 IST" name="tearDown" finished-at="2026-05-22T07:31:51 IST" duration-ms="2277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:07 IST" name="setUp" finished-at="2026-05-22T07:11:21 IST" duration-ms="13963" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:51 IST" name="setUp" finished-at="2026-05-22T07:32:13 IST" duration-ms="22179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:08 IST" name="setup" finished-at="2026-05-22T07:11:08 IST" duration-ms="93" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:52 IST" name="setup" finished-at="2026-05-22T07:31:52 IST" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithUsernameEmpty()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:08 IST" name="loginWithUsernameEmpty" finished-at="2026-05-22T07:11:08 IST" duration-ms="275" status="PASS">
+        <test-method signature="loginWithUsernameEmpty()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:52 IST" name="loginWithUsernameEmpty" finished-at="2026-05-22T07:31:52 IST" duration-ms="275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithUsernameEmpty -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:08 IST" name="tearDown" finished-at="2026-05-22T07:11:10 IST" duration-ms="2069" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:52 IST" name="tearDown" finished-at="2026-05-22T07:31:54 IST" duration-ms="2066" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:10 IST" name="setUp" finished-at="2026-05-22T07:11:24 IST" duration-ms="14108" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:54 IST" name="setUp" finished-at="2026-05-22T07:32:16 IST" duration-ms="22104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:11 IST" name="setup" finished-at="2026-05-22T07:11:11 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:55 IST" name="setup" finished-at="2026-05-22T07:31:55 IST" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithValidCredentials()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:11 IST" name="loginWithValidCredentials" finished-at="2026-05-22T07:11:12 IST" duration-ms="777" status="PASS">
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:31:55 IST" name="loginWithValidCredentials" finished-at="2026-05-22T07:32:05 IST" duration-ms="10246" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'Backup')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-29-generic', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:23885, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 17297, moz:profile: /tmp/rust_mozprofilezxdfFY, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ea859dd-29ce-4b72-8818-75f39c15326e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'Backup')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-29-generic', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:23885, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 17297, moz:profile: /tmp/rust_mozprofilezxdfFY, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ea859dd-29ce-4b72-8818-75f39c15326e
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.selenium.tests.LoginTest.loginWithValidCredentials(LoginTest.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:12 IST" name="tearDown" finished-at="2026-05-22T07:11:13 IST" duration-ms="1577" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:05 IST" name="tearDown" finished-at="2026-05-22T07:32:06 IST" duration-ms="381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:13 IST" name="setUp" finished-at="2026-05-22T07:11:27 IST" duration-ms="14017" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:06 IST" name="setUp" finished-at="2026-05-22T07:32:19 IST" duration-ms="13811" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:14 IST" name="setup" finished-at="2026-05-22T07:11:14 IST" duration-ms="101" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:07 IST" name="setup" finished-at="2026-05-22T07:32:07 IST" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithWhitespacePassword()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:14 IST" name="loginWithWhitespacePassword" finished-at="2026-05-22T07:11:14 IST" duration-ms="48" status="PASS">
+        <test-method signature="loginWithWhitespacePassword()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:07 IST" name="loginWithWhitespacePassword" finished-at="2026-05-22T07:32:07 IST" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithWhitespacePassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:14 IST" name="tearDown" finished-at="2026-05-22T07:11:17 IST" duration-ms="2375" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:07 IST" name="tearDown" finished-at="2026-05-22T07:32:09 IST" duration-ms="2280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:17 IST" name="setUp" finished-at="2026-05-22T07:11:31 IST" duration-ms="13964" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:09 IST" name="setUp" finished-at="2026-05-22T07:32:23 IST" duration-ms="13827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:18 IST" name="setup" finished-at="2026-05-22T07:11:18 IST" duration-ms="104" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:10 IST" name="setup" finished-at="2026-05-22T07:32:10 IST" duration-ms="98" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="switchToNewTabOrSameTab()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:18 IST" name="switchToNewTabOrSameTab" finished-at="2026-05-22T07:11:18 IST" duration-ms="110" status="PASS">
+        <test-method signature="switchToNewTabOrSameTab()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:10 IST" name="switchToNewTabOrSameTab" finished-at="2026-05-22T07:32:10 IST" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- switchToNewTabOrSameTab -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:18 IST" name="tearDown" finished-at="2026-05-22T07:11:20 IST" duration-ms="2170" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:10 IST" name="tearDown" finished-at="2026-05-22T07:32:12 IST" duration-ms="2276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:20 IST" name="setUp" finished-at="2026-05-22T07:11:34 IST" duration-ms="13976" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:12 IST" name="setUp" finished-at="2026-05-22T07:32:34 IST" duration-ms="21949" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:21 IST" name="setup" finished-at="2026-05-22T07:11:21 IST" duration-ms="108" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:13 IST" name="setup" finished-at="2026-05-22T07:32:13 IST" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAllElementsPresent()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:21 IST" name="verifyAllElementsPresent" finished-at="2026-05-22T07:11:21 IST" duration-ms="86" status="PASS">
+        <test-method signature="verifyAllElementsPresent()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:13 IST" name="verifyAllElementsPresent" finished-at="2026-05-22T07:32:13 IST" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllElementsPresent -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:21 IST" name="tearDown" finished-at="2026-05-22T07:11:23 IST" duration-ms="2279" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:13 IST" name="tearDown" finished-at="2026-05-22T07:32:16 IST" duration-ms="2273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:23 IST" name="setUp" finished-at="2026-05-22T07:11:37 IST" duration-ms="14010" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:16 IST" name="setUp" finished-at="2026-05-22T07:32:37 IST" duration-ms="21972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:24 IST" name="setup" finished-at="2026-05-22T07:11:24 IST" duration-ms="103" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:16 IST" name="setup" finished-at="2026-05-22T07:32:16 IST" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAutofillBehavior()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:24 IST" name="verifyAutofillBehavior" finished-at="2026-05-22T07:11:24 IST" duration-ms="43" status="PASS">
+        <test-method signature="verifyAutofillBehavior()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:16 IST" name="verifyAutofillBehavior" finished-at="2026-05-22T07:32:16 IST" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAutofillBehavior -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:24 IST" name="tearDown" finished-at="2026-05-22T07:11:26 IST" duration-ms="2184" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:16 IST" name="tearDown" finished-at="2026-05-22T07:32:19 IST" duration-ms="2367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:26 IST" name="setUp" finished-at="2026-05-22T07:11:40 IST" duration-ms="13998" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:19 IST" name="setUp" finished-at="2026-05-22T07:32:41 IST" duration-ms="21973" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:27 IST" name="setup" finished-at="2026-05-22T07:11:27 IST" duration-ms="101" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:19 IST" name="setup" finished-at="2026-05-22T07:32:20 IST" duration-ms="91" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyButtonAndLinkVisibility()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:27 IST" name="verifyButtonAndLinkVisibility" finished-at="2026-05-22T07:11:28 IST" duration-ms="47" status="PASS">
+        <test-method signature="verifyButtonAndLinkVisibility()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:20 IST" name="verifyButtonAndLinkVisibility" finished-at="2026-05-22T07:32:20 IST" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyButtonAndLinkVisibility -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:28 IST" name="tearDown" finished-at="2026-05-22T07:11:30 IST" duration-ms="2271" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:20 IST" name="tearDown" finished-at="2026-05-22T07:32:22 IST" duration-ms="2361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:30 IST" name="setUp" finished-at="2026-05-22T07:11:44 IST" duration-ms="13963" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:22 IST" name="setUp" finished-at="2026-05-22T07:32:57 IST" duration-ms="35272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:31 IST" name="setup" finished-at="2026-05-22T07:11:31 IST" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:23 IST" name="setup" finished-at="2026-05-22T07:32:23 IST" duration-ms="90" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyKeyboardNavigationLogin()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:31 IST" name="verifyKeyboardNavigationLogin" finished-at="2026-05-22T07:11:31 IST" duration-ms="648" status="PASS">
+        <test-method signature="verifyKeyboardNavigationLogin()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:23 IST" name="verifyKeyboardNavigationLogin" finished-at="2026-05-22T07:32:33 IST" duration-ms="10239" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'Backup')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-29-generic', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:26349, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 18856, moz:profile: /tmp/rust_mozprofileOAc4r6, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1fb33652-dd86-46d7-8b88-ea9a0cb3edaf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'Backup')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-29-generic', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:26349, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 18856, moz:profile: /tmp/rust_mozprofileOAc4r6, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1fb33652-dd86-46d7-8b88-ea9a0cb3edaf
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.selenium.tests.LoginTest.verifyKeyboardNavigationLogin(LoginTest.java:269)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyKeyboardNavigationLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:31 IST" name="tearDown" finished-at="2026-05-22T07:11:33 IST" duration-ms="1676" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:33 IST" name="tearDown" finished-at="2026-05-22T07:32:33 IST" duration-ms="360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:33 IST" name="setUp" finished-at="2026-05-22T07:11:47 IST" duration-ms="13960" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:33 IST" name="setUp" finished-at="2026-05-22T07:33:00 IST" duration-ms="27022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:34 IST" name="setup" finished-at="2026-05-22T07:11:34 IST" duration-ms="98" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:34 IST" name="setup" finished-at="2026-05-22T07:32:34 IST" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLabelsVisible()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:34 IST" name="verifyLabelsVisible" finished-at="2026-05-22T07:11:34 IST" duration-ms="18" status="PASS">
+        <test-method signature="verifyLabelsVisible()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:34 IST" name="verifyLabelsVisible" finished-at="2026-05-22T07:32:34 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLabelsVisible -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:34 IST" name="tearDown" finished-at="2026-05-22T07:11:36 IST" duration-ms="2376" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:34 IST" name="tearDown" finished-at="2026-05-22T07:32:37 IST" duration-ms="2366" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:37 IST" name="setup" finished-at="2026-05-22T07:11:37 IST" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:37 IST" name="setup" finished-at="2026-05-22T07:32:38 IST" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginAfterBackendReset()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:37 IST" name="verifyLoginAfterBackendReset" finished-at="2026-05-22T07:11:37 IST" duration-ms="161" status="PASS">
+        <test-method signature="verifyLoginAfterBackendReset()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:38 IST" name="verifyLoginAfterBackendReset" finished-at="2026-05-22T07:32:38 IST" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginAfterBackendReset -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:37 IST" name="tearDown" finished-at="2026-05-22T07:11:40 IST" duration-ms="2177" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:38 IST" name="tearDown" finished-at="2026-05-22T07:32:40 IST" duration-ms="2260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:40 IST" name="setup" finished-at="2026-05-22T07:11:41 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:41 IST" name="setup" finished-at="2026-05-22T07:32:41 IST" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginAfterPasswordChange()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:41 IST" name="verifyLoginAfterPasswordChange" finished-at="2026-05-22T07:11:41 IST" duration-ms="764" status="PASS">
+        <test-method signature="verifyLoginAfterPasswordChange()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:41 IST" name="verifyLoginAfterPasswordChange" finished-at="2026-05-22T07:32:56 IST" duration-ms="15303" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'Backup')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-29-generic', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:26776, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 19667, moz:profile: /tmp/rust_mozprofile1bq13r, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e7030093-a7af-493f-98d3-c59371193a41]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'Backup')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-29-generic', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:26776, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 19667, moz:profile: /tmp/rust_mozprofile1bq13r, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e7030093-a7af-493f-98d3-c59371193a41
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.selenium.tests.LoginTest.verifyLoginAfterPasswordChange(LoginTest.java:214)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginAfterPasswordChange -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:41 IST" name="tearDown" finished-at="2026-05-22T07:11:43 IST" duration-ms="1574" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:56 IST" name="tearDown" finished-at="2026-05-22T07:32:57 IST" duration-ms="376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:44 IST" name="setup" finished-at="2026-05-22T07:11:44 IST" duration-ms="91" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:57 IST" name="setup" finished-at="2026-05-22T07:32:57 IST" duration-ms="93" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginPageTitle()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:44 IST" name="verifyLoginPageTitle" finished-at="2026-05-22T07:11:44 IST" duration-ms="3" status="PASS">
+        <test-method signature="verifyLoginPageTitle()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:57 IST" name="verifyLoginPageTitle" finished-at="2026-05-22T07:32:57 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:44 IST" name="tearDown" finished-at="2026-05-22T07:11:46 IST" duration-ms="2377" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:32:57 IST" name="tearDown" finished-at="2026-05-22T07:33:00 IST" duration-ms="2375" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:47 IST" name="setup" finished-at="2026-05-22T07:11:47 IST" duration-ms="102" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:33:00 IST" name="setup" finished-at="2026-05-22T07:33:01 IST" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithMaxChars()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:47 IST" name="verifyLoginWithMaxChars" finished-at="2026-05-22T07:11:47 IST" duration-ms="148" status="PASS">
+        <test-method signature="verifyLoginWithMaxChars()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:33:01 IST" name="verifyLoginWithMaxChars" finished-at="2026-05-22T07:33:01 IST" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithMaxChars -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:11:47 IST" name="tearDown" finished-at="2026-05-22T07:11:50 IST" duration-ms="2279" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.LoginTest@60a98fa6]" started-at="2026-05-22T07:33:01 IST" name="tearDown" finished-at="2026-05-22T07:33:03 IST" duration-ms="2263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

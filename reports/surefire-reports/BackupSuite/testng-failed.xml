@@ -14,4 +14,19 @@
       </class> <!-- com.selenium.tests.DashboardTest -->
     </classes>
   </test> <!-- Dashboard(failed) -->
+  <test thread-count="5" parallel="methods" name="Login(failed)" verbose="0">
+    <parameter name="newBrowser" value="true"/>
+    <classes>
+      <class name="com.selenium.tests.LoginTest">
+        <methods>
+          <include name="loginWithValidCredentials"/>
+          <include name="verifyLoginAfterPasswordChange"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verifyKeyboardNavigationLogin"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.selenium.tests.LoginTest -->
+    </classes>
+  </test> <!-- Login(failed) -->
 </suite> <!-- Failed suite [BackupSuite] -->

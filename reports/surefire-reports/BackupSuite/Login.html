@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Login</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>20/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 22 07:10:44 IST 2026</td>
+<td>Started on:</td><td>Fri May 22 07:31:28 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>65 seconds (65821 ms)</td>
+<tr><td>Total time:</td><td>95 seconds (95161 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,150 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.verifyLoginAfterPasswordChange()'><b>verifyLoginAfterPasswordChange</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Backup&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:26776, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 19667, moz:profile: /tmp/rust_mozprofile1bq13r, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e7030093-a7af-493f-98d3-c59371193a41
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.selenium.tests.LoginTest.verifyLoginAfterPasswordChange(LoginTest.java:214)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace329755557", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace329755557'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Backup&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:26776, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 19667, moz:profile: /tmp/rust_mozprofile1bq13r, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e7030093-a7af-493f-98d3-c59371193a41
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.selenium.tests.LoginTest.verifyLoginAfterPasswordChange(LoginTest.java:214)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>15</td>
+<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.loginWithValidCredentials()'><b>loginWithValidCredentials</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Backup&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:23885, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 17297, moz:profile: /tmp/rust_mozprofilezxdfFY, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ea859dd-29ce-4b72-8818-75f39c15326e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.selenium.tests.LoginTest.loginWithValidCredentials(LoginTest.java:77)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1938505222", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1938505222'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Backup&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:23885, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 17297, moz:profile: /tmp/rust_mozprofilezxdfFY, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6ea859dd-29ce-4b72-8818-75f39c15326e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.selenium.tests.LoginTest.loginWithValidCredentials(LoginTest.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>10</td>
+<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.verifyKeyboardNavigationLogin()'><b>verifyKeyboardNavigationLogin</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Backup&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:26349, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 18856, moz:profile: /tmp/rust_mozprofileOAc4r6, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1fb33652-dd86-46d7-8b88-ea9a0cb3edaf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.selenium.tests.LoginTest.verifyKeyboardNavigationLogin(LoginTest.java:269)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1069089510", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1069089510'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Backup&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:26349, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 18856, moz:profile: /tmp/rust_mozprofileOAc4r6, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1fb33652-dd86-46d7-8b88-ea9a0cb3edaf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.selenium.tests.LoginTest.verifyKeyboardNavigationLogin(LoginTest.java:269)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>10</td>
+<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,7 +220,27 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.selenium.tests.LoginTest.clickSignUpLinkTest()'><b>clickSignUpLinkTest</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td title='com.selenium.tests.LoginTest.loginWithSQLInjection()'><b>loginWithSQLInjection</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.loginWithUsernameContainingSpaces()'><b>loginWithUsernameContainingSpaces</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.verifyAutofillBehavior()'><b>verifyAutofillBehavior</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.loginWithEmptyFields()'><b>loginWithEmptyFields</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.verifyButtonAndLinkVisibility()'><b>verifyButtonAndLinkVisibility</b><br>Test class: com.selenium.tests.LoginTest</td>
 <td></td>
 <td>0</td>
 <td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
@@ -86,12 +250,32 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
 <tr>
-<td title='com.selenium.tests.LoginTest.verifyAllElementsPresent()'><b>verifyAllElementsPresent</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td title='com.selenium.tests.LoginTest.loginWithInvalidUsername()'><b>loginWithInvalidUsername</b><br>Test class: com.selenium.tests.LoginTest</td>
 <td></td>
 <td>0</td>
 <td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
 <tr>
 <td title='com.selenium.tests.LoginTest.verifyLabelsVisible()'><b>verifyLabelsVisible</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.loginWithWhitespacePassword()'><b>loginWithWhitespacePassword</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.verifyAllElementsPresent()'><b>verifyAllElementsPresent</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.verifyLoginAfterBackendReset()'><b>verifyLoginAfterBackendReset</b><br>Test class: com.selenium.tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
+<tr>
+<td title='com.selenium.tests.LoginTest.clickSignUpLinkTest()'><b>clickSignUpLinkTest</b><br>Test class: com.selenium.tests.LoginTest</td>
 <td></td>
 <td>0</td>
 <td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
@@ -106,27 +290,7 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
 <tr>
-<td title='com.selenium.tests.LoginTest.loginWithSQLInjection()'><b>loginWithSQLInjection</b><br>Test class: com.selenium.tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
-<tr>
-<td title='com.selenium.tests.LoginTest.loginWithEmptyFields()'><b>loginWithEmptyFields</b><br>Test class: com.selenium.tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
-<tr>
-<td title='com.selenium.tests.LoginTest.verifyLoginAfterBackendReset()'><b>verifyLoginAfterBackendReset</b><br>Test class: com.selenium.tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
-<tr>
 <td title='com.selenium.tests.LoginTest.verifyLoginWithMaxChars()'><b>verifyLoginWithMaxChars</b><br>Test class: com.selenium.tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
-<tr>
-<td title='com.selenium.tests.LoginTest.verifyAutofillBehavior()'><b>verifyAutofillBehavior</b><br>Test class: com.selenium.tests.LoginTest</td>
 <td></td>
 <td>0</td>
 <td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
@@ -136,42 +300,7 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
 <tr>
-<td title='com.selenium.tests.LoginTest.loginWithInvalidUsername()'><b>loginWithInvalidUsername</b><br>Test class: com.selenium.tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
-<tr>
 <td title='com.selenium.tests.LoginTest.loginWithInvalidPassword()'><b>loginWithInvalidPassword</b><br>Test class: com.selenium.tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
-<tr>
-<td title='com.selenium.tests.LoginTest.verifyKeyboardNavigationLogin()'><b>verifyKeyboardNavigationLogin</b><br>Test class: com.selenium.tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
-<tr>
-<td title='com.selenium.tests.LoginTest.loginWithUsernameContainingSpaces()'><b>loginWithUsernameContainingSpaces</b><br>Test class: com.selenium.tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
-<tr>
-<td title='com.selenium.tests.LoginTest.loginWithValidCredentials()'><b>loginWithValidCredentials</b><br>Test class: com.selenium.tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
-<tr>
-<td title='com.selenium.tests.LoginTest.loginWithWhitespacePassword()'><b>loginWithWhitespacePassword</b><br>Test class: com.selenium.tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
-<tr>
-<td title='com.selenium.tests.LoginTest.verifyLoginAfterPasswordChange()'><b>verifyLoginAfterPasswordChange</b><br>Test class: com.selenium.tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
-<tr>
-<td title='com.selenium.tests.LoginTest.verifyButtonAndLinkVisibility()'><b>verifyButtonAndLinkVisibility</b><br>Test class: com.selenium.tests.LoginTest</td>
 <td></td>
 <td>0</td>
 <td>com.selenium.tests.LoginTest@60a98fa6</td></tr>
