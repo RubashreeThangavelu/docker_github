@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="214.501" tests="39" errors="0" skipped="0" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="215.417" tests="39" errors="0" skipped="0" failures="4">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -63,22 +63,14 @@
     <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="verifyBackupTimeReflectsSystemClock" classname="com.selenium.tests.DashboardTest" time="5.945">
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-May 22, 2026 7:29:29 AM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
-INFO: Using OpenTelemetry for tracing
-]]></system-err>
-  </testcase>
-  <testcase name="verifyBackupSummaryConsistency" classname="com.selenium.tests.DashboardTest" time="40.215">
-    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //p[strong[contains(text(),&apos;Last File:&apos;)]] (tried for 40 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:32463, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 10673, moz:profile: /tmp/rust_mozprofileb99iWx, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 4f955d8c-f6d9-4472-9da3-7b3bdeab2181" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+  <testcase name="verifyBackupSummaryConsistency" classname="com.selenium.tests.DashboardTest" time="40.49">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //p[strong[contains(text(),&apos;Last File:&apos;)]] (tried for 40 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:7896, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 167, moz:profile: /tmp/rust_mozprofilewhYWaV, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.2:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.2:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 73028ca6-c69c-4051-b7e4-7a213a576a9b" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
 Expected condition failed: waiting for visibility of element located by By.xpath: //p[strong[contains(text(),'Last File:')]] (tried for 40 second(s) with 500 milliseconds interval)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-29-generic', java.version: '21.0.3'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:32463, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 10673, moz:profile: /tmp/rust_mozprofileb99iWx, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4f955d8c-f6d9-4472-9da3-7b3bdeab2181
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:7896, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 167, moz:profile: /tmp/rust_mozprofilewhYWaV, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.2:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.2:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 73028ca6-c69c-4051-b7e4-7a213a576a9b
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at com.selenium.tests.DashboardTest.verifyBackupSummaryConsistency(DashboardTest.java:311)
@@ -100,58 +92,65 @@ Session ID: 4f955d8c-f6d9-4472-9da3-7b3bdeab2181
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></failure>
     <system-out><![CDATA[Dashboard - Last File: 1
-Dashboard - Last Run: 2026-05-22 07:29:30
-Dashboard - Status: Success
-Dashboard - Next Run: 83
+Dashboard - Last Run: None
+Dashboard - Status: Scheduled
+Dashboard - Next Run: 86
 ]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+May 22, 2026 8:16:31 AM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+INFO: Using OpenTelemetry for tracing
+]]></system-err>
   </testcase>
-  <testcase name="verifyAllTextVisible" classname="com.selenium.tests.DashboardTest" time="0.048"/>
-  <testcase name="verifyBackupStatsVisible" classname="com.selenium.tests.DashboardTest" time="0.107"/>
-  <testcase name="verifyAutoRefresh" classname="com.selenium.tests.DashboardTest" time="16.046"/>
-  <testcase name="verifyDashboardAfterRefresh" classname="com.selenium.tests.DashboardTest" time="0.055"/>
-  <testcase name="verifyDashboardHandlesLargeBackupCount" classname="com.selenium.tests.DashboardTest" time="0.061"/>
-  <testcase name="verifyDashboardNavigation" classname="com.selenium.tests.DashboardTest" time="0.037"/>
-  <testcase name="verifyFailedBackupStatus" classname="com.selenium.tests.DashboardTest" time="0.035"/>
+  <testcase name="verifyAutoRefresh" classname="com.selenium.tests.DashboardTest" time="16.057"/>
+  <testcase name="verifyBackupTimeReflectsSystemClock" classname="com.selenium.tests.DashboardTest" time="5.924"/>
+  <testcase name="verifyBackupStatsVisible" classname="com.selenium.tests.DashboardTest" time="0.113"/>
+  <testcase name="verifyAllTextVisible" classname="com.selenium.tests.DashboardTest" time="0.054"/>
+  <testcase name="verifyDashboardAfterRefresh" classname="com.selenium.tests.DashboardTest" time="0.054"/>
+  <testcase name="verifyDashboardHandlesLargeBackupCount" classname="com.selenium.tests.DashboardTest" time="0.063"/>
+  <testcase name="verifyDashboardNavigation" classname="com.selenium.tests.DashboardTest" time="0.049"/>
+  <testcase name="verifyFailedBackupStatus" classname="com.selenium.tests.DashboardTest" time="0.031"/>
   <testcase name="verifyFontStyles" classname="com.selenium.tests.DashboardTest" time="0.024"/>
-  <testcase name="verifyGoToLoginButton" classname="com.selenium.tests.DashboardTest" time="0.162">
+  <testcase name="verifyGoToLoginButton" classname="com.selenium.tests.DashboardTest" time="0.172">
     <system-out><![CDATA[Navigation to login page verified.
 Login page elements verified and login button is clickable.
 ]]></system-out>
   </testcase>
-  <testcase name="verifyGoToLoginButtonEffect" classname="com.selenium.tests.DashboardTest" time="0.189">
+  <testcase name="verifyGoToLoginButtonEffect" classname="com.selenium.tests.DashboardTest" time="0.183">
     <system-out><![CDATA[Button hover color: rgb(25, 118, 210)
 ]]></system-out>
   </testcase>
-  <testcase name="verifyNoOverlappingElements" classname="com.selenium.tests.DashboardTest" time="0.106"/>
-  <testcase name="verifyPageBackgroundColor" classname="com.selenium.tests.DashboardTest" time="0.025"/>
-  <testcase name="verifyPageHeading" classname="com.selenium.tests.DashboardTest" time="0.036"/>
-  <testcase name="verifyPageLoadSpeed" classname="com.selenium.tests.DashboardTest" time="0.03"/>
-  <testcase name="verifyPageTitle" classname="com.selenium.tests.DashboardTest" time="0.004"/>
-  <testcase name="verifyScreenReaderCompatibility" classname="com.selenium.tests.DashboardTest" time="0.059"/>
-  <testcase name="verifyStatsAlignment" classname="com.selenium.tests.DashboardTest" time="0.111">
-    <system-out><![CDATA[Last Backup Time: 2026-05-22 07:31:00 X position: 397
-Total Backups Completed: 84 X position: 397
+  <testcase name="verifyNoOverlappingElements" classname="com.selenium.tests.DashboardTest" time="0.119"/>
+  <testcase name="verifyPageBackgroundColor" classname="com.selenium.tests.DashboardTest" time="0.026"/>
+  <testcase name="verifyPageHeading" classname="com.selenium.tests.DashboardTest" time="0.028"/>
+  <testcase name="verifyPageLoadSpeed" classname="com.selenium.tests.DashboardTest" time="0.04"/>
+  <testcase name="verifyPageTitle" classname="com.selenium.tests.DashboardTest" time="0.005"/>
+  <testcase name="verifyScreenReaderCompatibility" classname="com.selenium.tests.DashboardTest" time="0.053"/>
+  <testcase name="verifyStatsAlignment" classname="com.selenium.tests.DashboardTest" time="0.124">
+    <system-out><![CDATA[Last Backup Time: 2026-05-22 08:17:32 X position: 397
+Total Backups Completed: 87 X position: 397
 Files in Last Backup: 1 X position: 397
 Status: Success X position: 397
 All statistics are aligned correctly.
 ]]></system-out>
   </testcase>
-  <testcase name="loginWithInvalidUsername" classname="com.selenium.tests.LoginTest" time="0.182"/>
-  <testcase name="loginWithPasswordEmpty" classname="com.selenium.tests.LoginTest" time="0.275"/>
-  <testcase name="clickSignUpLinkTest" classname="com.selenium.tests.LoginTest" time="0.116"/>
-  <testcase name="loginWithEmptyFields" classname="com.selenium.tests.LoginTest" time="0.263"/>
-  <testcase name="loginWithInvalidPassword" classname="com.selenium.tests.LoginTest" time="0.083"/>
-  <testcase name="loginWithSQLInjection" classname="com.selenium.tests.LoginTest" time="0.092"/>
-  <testcase name="loginWithUsernameContainingSpaces" classname="com.selenium.tests.LoginTest" time="0.094"/>
-  <testcase name="loginWithUsernameEmpty" classname="com.selenium.tests.LoginTest" time="0.275"/>
-  <testcase name="loginWithValidCredentials" classname="com.selenium.tests.LoginTest" time="10.245">
-    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Backup&apos;)] (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:23885, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 17297, moz:profile: /tmp/rust_mozprofilezxdfFY, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 6ea859dd-29ce-4b72-8818-75f39c15326e" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+  <testcase name="loginWithEmptyFields" classname="com.selenium.tests.LoginTest" time="0.268"/>
+  <testcase name="clickSignUpLinkTest" classname="com.selenium.tests.LoginTest" time="0.124"/>
+  <testcase name="loginWithPasswordEmpty" classname="com.selenium.tests.LoginTest" time="0.276"/>
+  <testcase name="loginWithInvalidUsername" classname="com.selenium.tests.LoginTest" time="0.174"/>
+  <testcase name="loginWithInvalidPassword" classname="com.selenium.tests.LoginTest" time="0.09"/>
+  <testcase name="loginWithSQLInjection" classname="com.selenium.tests.LoginTest" time="0.09"/>
+  <testcase name="loginWithUsernameContainingSpaces" classname="com.selenium.tests.LoginTest" time="0.093"/>
+  <testcase name="loginWithUsernameEmpty" classname="com.selenium.tests.LoginTest" time="0.273"/>
+  <testcase name="loginWithValidCredentials" classname="com.selenium.tests.LoginTest" time="10.268">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Backup&apos;)] (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:27054, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 7228, moz:profile: /tmp/rust_mozprofileM5m5kn, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.2:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.2:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: e1ce8b4e-bfa7-46aa-9e74-c133dfbfc22a" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
 Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'Backup')] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-29-generic', java.version: '21.0.3'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:23885, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 17297, moz:profile: /tmp/rust_mozprofilezxdfFY, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6ea859dd-29ce-4b72-8818-75f39c15326e
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:27054, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 7228, moz:profile: /tmp/rust_mozprofileM5m5kn, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.2:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.2:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e1ce8b4e-bfa7-46aa-9e74-c133dfbfc22a
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at com.selenium.tests.LoginTest.loginWithValidCredentials(LoginTest.java:77)
@@ -173,26 +172,26 @@ Session ID: 6ea859dd-29ce-4b72-8818-75f39c15326e
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></failure>
   </testcase>
-  <testcase name="loginWithWhitespacePassword" classname="com.selenium.tests.LoginTest" time="0.038"/>
-  <testcase name="switchToNewTabOrSameTab" classname="com.selenium.tests.LoginTest" time="0.112">
+  <testcase name="loginWithWhitespacePassword" classname="com.selenium.tests.LoginTest" time="0.04"/>
+  <testcase name="switchToNewTabOrSameTab" classname="com.selenium.tests.LoginTest" time="0.117">
     <system-out><![CDATA[Opened in the same tab.
 ]]></system-out>
   </testcase>
-  <testcase name="verifyAllElementsPresent" classname="com.selenium.tests.LoginTest" time="0.076"/>
-  <testcase name="verifyAutofillBehavior" classname="com.selenium.tests.LoginTest" time="0.037">
+  <testcase name="verifyAllElementsPresent" classname="com.selenium.tests.LoginTest" time="0.075"/>
+  <testcase name="verifyAutofillBehavior" classname="com.selenium.tests.LoginTest" time="0.042">
     <system-out><![CDATA[Username autocomplete attribute: 
 Login fields are ready for autofill/manual input.
 ]]></system-out>
   </testcase>
-  <testcase name="verifyButtonAndLinkVisibility" classname="com.selenium.tests.LoginTest" time="0.048"/>
-  <testcase name="verifyKeyboardNavigationLogin" classname="com.selenium.tests.LoginTest" time="10.239">
-    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Backup&apos;)] (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:26349, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 18856, moz:profile: /tmp/rust_mozprofileOAc4r6, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 1fb33652-dd86-46d7-8b88-ea9a0cb3edaf" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+  <testcase name="verifyButtonAndLinkVisibility" classname="com.selenium.tests.LoginTest" time="0.052"/>
+  <testcase name="verifyKeyboardNavigationLogin" classname="com.selenium.tests.LoginTest" time="10.273">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Backup&apos;)] (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:26233, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 8805, moz:profile: /tmp/rust_mozprofileu5tMFX, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.2:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.2:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 4de02f38-92b8-46a2-87e9-5b0fd2a07ea6" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
 Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'Backup')] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-29-generic', java.version: '21.0.3'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:26349, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 18856, moz:profile: /tmp/rust_mozprofileOAc4r6, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1fb33652-dd86-46d7-8b88-ea9a0cb3edaf
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:26233, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 8805, moz:profile: /tmp/rust_mozprofileu5tMFX, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.2:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.2:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4de02f38-92b8-46a2-87e9-5b0fd2a07ea6
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at com.selenium.tests.LoginTest.verifyKeyboardNavigationLogin(LoginTest.java:269)
@@ -215,15 +214,15 @@ Session ID: 1fb33652-dd86-46d7-8b88-ea9a0cb3edaf
 ]]></failure>
   </testcase>
   <testcase name="verifyLabelsVisible" classname="com.selenium.tests.LoginTest" time="0.023"/>
-  <testcase name="verifyLoginAfterBackendReset" classname="com.selenium.tests.LoginTest" time="0.14"/>
-  <testcase name="verifyLoginAfterPasswordChange" classname="com.selenium.tests.LoginTest" time="15.303">
-    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Backup&apos;)] (tried for 15 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:26776, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 19667, moz:profile: /tmp/rust_mozprofile1bq13r, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: e7030093-a7af-493f-98d3-c59371193a41" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+  <testcase name="verifyLoginAfterBackendReset" classname="com.selenium.tests.LoginTest" time="0.211"/>
+  <testcase name="verifyLoginAfterPasswordChange" classname="com.selenium.tests.LoginTest" time="15.329">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),&apos;Backup&apos;)] (tried for 15 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;&#10;System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.17.0-29-generic&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:22154, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 9641, moz:profile: /tmp/rust_mozprofileksCwNQ, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.2:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.2:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 56fc663d-88a8-4f54-9650-0edc1f36b59d" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
 Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'Backup')] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-29-generic', java.version: '21.0.3'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:26776, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 19667, moz:profile: /tmp/rust_mozprofile1bq13r, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e7030093-a7af-493f-98d3-c59371193a41
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:22154, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 9641, moz:profile: /tmp/rust_mozprofileksCwNQ, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.2:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.2:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 56fc663d-88a8-4f54-9650-0edc1f36b59d
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at com.selenium.tests.LoginTest.verifyLoginAfterPasswordChange(LoginTest.java:214)
@@ -245,8 +244,8 @@ Session ID: e7030093-a7af-493f-98d3-c59371193a41
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></failure>
   </testcase>
-  <testcase name="verifyLoginPageTitle" classname="com.selenium.tests.LoginTest" time="0.002"/>
-  <testcase name="verifyLoginWithMaxChars" classname="com.selenium.tests.LoginTest" time="0.205">
+  <testcase name="verifyLoginPageTitle" classname="com.selenium.tests.LoginTest" time="0.006"/>
+  <testcase name="verifyLoginWithMaxChars" classname="com.selenium.tests.LoginTest" time="0.179">
     <system-out><![CDATA[PASS: Login processed correctly; input validation enforced for max chars.
 ]]></system-out>
   </testcase>
