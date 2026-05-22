@@ -42,6 +42,7 @@ jobs:
           docker exec mysql-github sh -c '
           mysql -uroot -p"$MYSQL_ROOT_PASSWORD" -e "
           USE $MYSQL_DATABASE;
+          SHOW TABLES;
           SELECT * FROM Backup_users;
           "
           '
