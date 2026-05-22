@@ -38,7 +38,7 @@ jobs:
         run: |
           docker exec mysql-github sh -c '
           mysql -uroot -proot -e "
-          USE $MYSQL_DATABASE;
+          USE login_db;
           SHOW TABLES;
           SELECT * FROM Backup_users;
           "
