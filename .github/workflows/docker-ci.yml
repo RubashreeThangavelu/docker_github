@@ -34,9 +34,9 @@ jobs:
       - name: Wait for Grid
         run: sleep 30
 
-      - name: Check DB data
-        run:  docker exec mysql-github mysql -uroot -p${MYSQL_ROOT_PASSWORD} -e "USE ${MYSQL_DATABASE}; SELECT * FROM Backup_users;"
-      
+      - name: Verify DB data
+        env:MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }} MYSQL_DATABASE: login_db
+        run:  docker exec mysql-github sh -c ' mysql -uroot -p"$MYSQL_ROOT_PASSWORD" -e " USE $MYSQL_DATABASE; SELECT * FROM Backup_users;" '
       - name: Execute Tests
         run: docker compose run --rm selenium-tests mvn test
 
