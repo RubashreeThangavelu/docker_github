@@ -36,8 +36,7 @@ jobs:
 
       - name: Verify DB data
         run: |
-          docker exec mysql-github sh -c '
-          mysql -uroot -proot -e "
+          docker exec mysql-github mysql -uroot -proot -e "
           USE login_db;
           SHOW TABLES;
           SELECT * FROM Backup_users;
