@@ -41,7 +41,6 @@ jobs:
           SHOW TABLES;
           SELECT * FROM Backup_users;
           "
-          '
 
       - name: Execute Tests
         run: docker compose run --rm selenium-tests mvn test
