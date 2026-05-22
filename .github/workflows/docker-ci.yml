@@ -35,12 +35,7 @@ jobs:
         run: sleep 30
 
       - name: Verify DB data
-        run: |
-          docker exec mysql-github mysql -uroot -proot -e "
-          USE login_db;
-          SHOW TABLES;
-          SELECT * FROM Backup_users;
-          "
+        run:   docker exec -i mysql-github mysql -uroot -proot < db/init.sql
 
       - name: Execute Tests
         run: docker compose run --rm selenium-tests mvn test
