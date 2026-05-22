@@ -1,16 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 39, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 146.7 s <<< FAILURE! -- in TestSuite
-com.selenium.tests.DashboardTest.verifyBackupSummaryConsistency -- Time elapsed: 0.662 s <<< FAILURE!
-java.lang.AssertionError: expected [2026-05-21 16:48:18] but found [Last Run: 2026-05-21 16:48:18]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.selenium.tests.DashboardTest.verifyBackupSummaryConsistency(DashboardTest.java:305)
+Tests run: 39, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 185.9 s <<< FAILURE! -- in TestSuite
+com.selenium.tests.DashboardTest.verifyBackupSummaryConsistency -- Time elapsed: 40.16 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //p[strong[contains(text(),'Last File:')]] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-29-generic', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:23147, moz:firefoxOptions: {args: [--headless]}, moz:geckodriverVersion: 0.34.0, moz:headless: true, moz:platformVersion: 6.17.0-29-generic, moz:processID: 1052, moz:profile: /tmp/rust_mozprofilelSmlCA, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.0.5:4444/sessi..., se:cdpVersion: 85.0, se:noVncPort: 7900, se:vnc: ws://192.168.0.5:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://192.168.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 49198fc0-0438-4209-a2f4-3d3b80340396
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.selenium.tests.DashboardTest.verifyBackupSummaryConsistency(DashboardTest.java:311)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)

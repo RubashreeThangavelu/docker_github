@@ -761,3 +761,39 @@ Status     : Success
 Size       : 17 bytes
 Duration   : 0 sec
 
+======================================
+Time       : 2026-05-21 23:08:16
+Source     : /data/temp
+Destination: /data/backup
+File       : file6.txt
+Status     : Success
+Size       : 17 bytes
+Duration   : 0 sec
+
+======================================
+Time       : 2026-05-21 23:10:00
+Source     : /data/temp
+Destination: /data/backup
+File       : file6.txt
+Status     : Success
+Size       : 17 bytes
+Duration   : 0 sec
+
+======================================
+Time       : 2026-05-22 07:09:52
+Source     : /data/temp
+Destination: /data/backup
+File       : file6.txt
+Status     : Success
+Size       : 17 bytes
+Duration   : 0 sec
+
+======================================
+Time       : 2026-05-22 07:11:00
+Source     : /data/temp
+Destination: /data/backup
+File       : file6.txt
+Status     : Success
+Size       : 17 bytes
+Duration   : 0 sec
+
