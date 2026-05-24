@@ -25,19 +25,20 @@ jobs:
           path: ~/.m2
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
 
-      # 🔥 STEP 1: Clean environment
       - name: Stop old containers
         run: docker compose down -v
 
-      # 🔥 STEP 2: Build images
+      - name: Clean old reports
+        run: |
+            rm -rf target
+            rm -rf test-output
+
       - name: Build containers
         run: docker compose build
 
-      # 🔥 STEP 3: Start all services
       - name: Start containers
         run: docker compose up -d
 
-      # 🔥 STEP 4: Wait for MySQL
       - name: Wait for MySQL
         run: |
           until docker compose exec mysql-db1 mysqladmin ping -uroot -proot --silent; do
@@ -45,16 +46,13 @@ jobs:
             sleep 5
           done
 
-      # 🔥 STEP 5: Verify DB (debug step)
       - name: Check DB tables
         run: |
           docker compose exec mysql-db1 mysql -uroot -proot -e "USE login_db; SHOW TABLES;"
 
-      # 🔥 STEP 6: Run Selenium tests
       - name: Run tests
         run: docker compose run --rm selenium-tests mvn test
 
-      # 🔥 STEP 7: Upload reports
       - name: Upload reports
         uses: actions/upload-artifact@v4
         if: always()
@@ -62,7 +60,6 @@ jobs:
           name: selenium-reports
           path: reports/
 
-      # 🔥 STEP 8: Cleanup
       - name: Stop containers
         if: always()
         run: docker compose down -v
