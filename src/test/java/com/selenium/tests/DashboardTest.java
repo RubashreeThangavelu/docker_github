@@ -278,7 +278,8 @@ public class DashboardTest extends BaseTest {
     }
 
    // 18. verify backup Summary consistency
-   @Test
+// 18. verify backup Summary consistency
+@Test
 public void verifyBackupSummaryConsistency() throws InterruptedException {
 
     WebDriverWait wait =
@@ -287,19 +288,18 @@ public void verifyBackupSummaryConsistency() throws InterruptedException {
     JavascriptExecutor js =
             (JavascriptExecutor) driver;
 
-    // Wait until dashboard page fully loaded
+    // wait until dashboard page fully loaded
     wait.until(driver ->
             js.executeScript("return document.readyState")
                     .equals("complete"));
 
-    // Wait for dashboard summary element
     WebElement dashLastFile =
             wait.until(ExpectedConditions.presenceOfElementLocated(
                     By.xpath("//p[strong[contains(text(),'Files in Last Backup:')]]")
             ));
 
     js.executeScript(
-            "arguments[0].scrollIntoView(true);",
+            "arguments[0].scrollIntoView({block:'center'});",
             dashLastFile
     );
 
@@ -341,11 +341,11 @@ public void verifyBackupSummaryConsistency() throws InterruptedException {
     System.out.println("Dashboard - Status: " + dashStatusText);
     System.out.println("Dashboard - Next Run: " + dashNextRunText);
 
-    // small wait before next page
     Thread.sleep(2000);
 
     driver.get(baseUrl + "index.jsp");
 
+    // wait until index page loaded
     wait.until(driver ->
             js.executeScript("return document.readyState")
                     .equals("complete"));
@@ -356,7 +356,7 @@ public void verifyBackupSummaryConsistency() throws InterruptedException {
             ));
 
     js.executeScript(
-            "arguments[0].scrollIntoView(true);",
+            "arguments[0].scrollIntoView({block:'center'});",
             statusLastFile
     );
 
