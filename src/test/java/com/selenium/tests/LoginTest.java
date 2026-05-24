@@ -76,6 +76,7 @@ public class LoginTest extends BaseTest {
 
     System.out.println("URL after login: " + driver.getCurrentUrl());
     System.out.println("Page title: " + driver.getTitle());
+    System.out.println(driver.getPageSource());
 
     WebElement schedulerTitle = wait.until(
         ExpectedConditions.visibilityOfElementLocated(
