@@ -28,10 +28,7 @@ jobs:
       - name: Stop old containers
         run: docker compose down -v
 
-      - name: Clean old reports
-        run: |
-            rm -rf target
-            rm -rf test-output
+    
 
       - name: Build containers
         run: docker compose build
