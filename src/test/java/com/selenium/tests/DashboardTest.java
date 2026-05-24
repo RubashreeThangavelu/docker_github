@@ -283,7 +283,6 @@ public void verifyBackupSummaryConsistency() throws InterruptedException {
 
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(90));
 
-    // ---------------- Dashboard Page ----------------
 
     WebElement dashLastFile = wait.until(
             ExpectedConditions.visibilityOfElementLocated(
@@ -318,7 +317,6 @@ public void verifyBackupSummaryConsistency() throws InterruptedException {
     System.out.println("Dashboard Status: " + dashStatusText);
     System.out.println("Dashboard Total Backups: " + dashTotalBackupsText);
 
-    // ---------------- Open Backup Status Page ----------------
 
     driver.get(baseUrl + "/index.jsp");
 
@@ -327,25 +325,12 @@ public void verifyBackupSummaryConsistency() throws InterruptedException {
                     .executeScript("return document.readyState")
                     .equals("complete"));
 
-    // ---------------- Debug Info ----------------
-
-    System.out.println("=================================");
-    System.out.println("Current URL: " + driver.getCurrentUrl());
-    System.out.println("Page Title: " + driver.getTitle());
+  
 
     WebElement body = wait.until(
             ExpectedConditions.visibilityOfElementLocated(
                     By.tagName("body")));
 
-    System.out.println("---------- BODY TEXT ----------");
-    System.out.println(body.getText());
-
-    System.out.println("------- PAGE SOURCE START -------");
-    System.out.println(driver.getPageSource());
-    System.out.println("------- PAGE SOURCE END -------");
-    System.out.println("=================================");
-
-    // ---------------- Backup Status Page ----------------
 
     WebElement statusLastFile = wait.until(
             ExpectedConditions.visibilityOfElementLocated(
@@ -380,7 +365,6 @@ public void verifyBackupSummaryConsistency() throws InterruptedException {
     System.out.println("Status Status: " + statusStatusText);
     System.out.println("Status Next Run: " + statusNextRunText);
 
-    // ---------------- Assertions ----------------
 
     Assert.assertEquals(
             statusLastRunText,
