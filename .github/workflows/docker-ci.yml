@@ -34,10 +34,9 @@ jobs:
       - name: List running containers
         run: docker ps
 
-      # ✅ 1. Wait for MySQL
-      - name: Wait for MySQL
+      - name: Wait for MySQL (correct way)
         run: |
-            until docker exec mysql-db1 mysqladmin ping -uroot -proot --silent; do
+            until docker compose exec mysql-db1 mysqladmin ping -uroot -proot --silent; do
             echo "Waiting for MySQL..."
             sleep 5
             done
