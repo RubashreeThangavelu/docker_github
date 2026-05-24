@@ -31,6 +31,9 @@ jobs:
       - name: Start Containers
         run: docker compose up -d
 
+      - name: List running containers
+        run: docker ps
+
       # ✅ 1. Wait for MySQL
       - name: Wait for MySQL
         run: |
