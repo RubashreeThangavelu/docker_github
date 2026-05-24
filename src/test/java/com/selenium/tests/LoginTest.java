@@ -30,7 +30,7 @@ public class LoginTest extends BaseTest {
            
          baseUrl = ConfigReader.getProperty("base.url");
 
-        driver.get(baseUrl + "/login.html");
+        driver.get(baseUrl + "login.html");
 
 
         loginPage = new LoginPage(driver);
@@ -225,7 +225,7 @@ public class LoginTest extends BaseTest {
 
     driver.manage().deleteAllCookies();
     
-            driver.get(baseUrl + "/login.html");
+            driver.get(baseUrl + "login.html");
 
 
 
