@@ -278,149 +278,100 @@ public class DashboardTest extends BaseTest {
     }
 
    // 18. verify backup Summary consistency
-// 18. verify backup Summary consistency
 @Test
 public void verifyBackupSummaryConsistency() throws InterruptedException {
 
-    WebDriverWait wait =
-            new WebDriverWait(driver, Duration.ofSeconds(90));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(90));
 
-    JavascriptExecutor js =
-            (JavascriptExecutor) driver;
+    // ---------------- Dashboard ----------------
 
-    // wait until dashboard page fully loaded
-    wait.until(driver ->
-            js.executeScript("return document.readyState")
-                    .equals("complete"));
+    WebElement dashLastFile = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//p[strong[contains(text(),'Files in Last Backup:')]]")));
 
-    WebElement dashLastFile =
-            wait.until(ExpectedConditions.presenceOfElementLocated(
-                    By.xpath("//p[strong[contains(text(),'Files in Last Backup:')]]")
-            ));
+    WebElement dashLastRun = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//p[strong[contains(text(),'Last Backup Time:')]]/span")));
 
-    js.executeScript(
-            "arguments[0].scrollIntoView({block:'center'});",
-            dashLastFile
-    );
+    WebElement dashStatus = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//p[strong[contains(text(),'Status:')]]/span")));
 
-    wait.until(
-            ExpectedConditions.visibilityOf(dashLastFile)
-    );
-
-    WebElement dashLastRun =
-            wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.xpath("//p[strong[contains(text(),'Last Backup Time:')]]/span")
-            ));
-
-    WebElement dashStatus =
-            wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.xpath("//p[strong[contains(text(),'Status:')]]/span")
-            ));
-
-    WebElement dashNextRun =
-            wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.xpath("//p[strong[contains(text(),'Total Backups Completed:')]]/span")
-            ));
+    WebElement dashTotalBackups = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//p[strong[contains(text(),'Total Backups Completed:')]]/span")));
 
     String dashLastFileText =
-            dashLastFile.getText()
-                    .replace("Files in Last Backup:", "")
-                    .trim();
+            dashLastFile.getText().replace("Files in Last Backup:", "").trim();
 
-    String dashLastRunText =
-            dashLastRun.getText().trim();
+    String dashLastRunText = dashLastRun.getText().trim();
 
-    String dashStatusText =
-            dashStatus.getText().trim();
+    String dashStatusText = dashStatus.getText().trim();
 
-    String dashNextRunText =
-            dashNextRun.getText().trim();
+    String dashTotalBackupsText = dashTotalBackups.getText().trim();
 
-    System.out.println("Dashboard - Last File: " + dashLastFileText);
-    System.out.println("Dashboard - Last Run: " + dashLastRunText);
-    System.out.println("Dashboard - Status: " + dashStatusText);
-    System.out.println("Dashboard - Next Run: " + dashNextRunText);
+    System.out.println("Dashboard Last File: " + dashLastFileText);
+    System.out.println("Dashboard Last Run: " + dashLastRunText);
+    System.out.println("Dashboard Status: " + dashStatusText);
+    System.out.println("Dashboard Total Backups: " + dashTotalBackupsText);
 
-    Thread.sleep(2000);
+    // ---------------- Open backup status page ----------------
 
     driver.get(baseUrl + "index.jsp");
 
-    // wait until index page loaded
-    wait.until(driver ->
-            js.executeScript("return document.readyState")
+    wait.until(webDriver ->
+            ((JavascriptExecutor) webDriver)
+                    .executeScript("return document.readyState")
                     .equals("complete"));
 
-    WebElement statusLastFile =
-            wait.until(ExpectedConditions.presenceOfElementLocated(
-                    By.xpath("//p[strong[contains(text(),'Last File:')]]")
-            ));
+    // ---------------- Backup Status ----------------
 
-    js.executeScript(
-            "arguments[0].scrollIntoView({block:'center'});",
-            statusLastFile
-    );
+    WebElement statusLastFile = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//p[contains(.,'Last File:')]")));
 
-    wait.until(
-            ExpectedConditions.visibilityOf(statusLastFile)
-    );
+    WebElement statusLastRun = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//p[contains(.,'Last Run:')]")));
 
-    WebElement statusLastRun =
-            wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.xpath("//p[strong[contains(text(),'Last Run:')]]")
-            ));
+    WebElement statusStatus = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//p[contains(.,'Status:')]")));
 
-    WebElement statusStatus =
-            wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.xpath("//p[strong[contains(text(),'Status:')]]")
-            ));
-
-    WebElement statusNextRun =
-            wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.xpath("//p[strong[contains(text(),'Next Scheduled Run:')]]")
-            ));
+    WebElement statusNextRun = wait.until(
+            ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//p[contains(.,'Next Scheduled Run:')]")));
 
     String statusLastFileText =
-            statusLastFile.getText()
-                    .replace("Last File:", "")
-                    .trim();
+            statusLastFile.getText().replace("Last File:", "").trim();
 
     String statusLastRunText =
-            statusLastRun.getText()
-                    .replace("Last Run:", "")
-                    .trim();
+            statusLastRun.getText().replace("Last Run:", "").trim();
 
     String statusStatusText =
-            statusStatus.getText()
-                    .replace("Status:", "")
-                    .trim();
+            statusStatus.getText().replace("Status:", "").trim();
 
     String statusNextRunText =
-            statusNextRun.getText()
-                    .replace("Next Scheduled Run:", "")
-                    .trim();
+            statusNextRun.getText().replace("Next Scheduled Run:", "").trim();
 
-    System.out.println("Backup Status - Last File: " + statusLastFileText);
-    System.out.println("Backup Status - Last Run: " + statusLastRunText);
-    System.out.println("Backup Status - Status: " + statusStatusText);
-    System.out.println("Backup Status - Next Run: " + statusNextRunText);
+    System.out.println("Status Last File: " + statusLastFileText);
+    System.out.println("Status Last Run: " + statusLastRunText);
+    System.out.println("Status Status: " + statusStatusText);
+    System.out.println("Status Next Run: " + statusNextRunText);
 
-    Assert.assertEquals(
-            statusLastRunText,
+    // ---------------- Assertions ----------------
+
+    Assert.assertEquals(statusLastRunText,
             dashLastRunText,
-            "Last Run mismatch!"
-    );
+            "Last Run mismatch!");
 
-    Assert.assertEquals(
-            statusStatusText,
+    Assert.assertEquals(statusStatusText,
             dashStatusText,
-            "Status mismatch!"
-    );
+            "Status mismatch!");
 
     System.out.println(
-            "Backup summary is consistent between Dashboard and Backup Status page."
-    );
-}
-    // 19. Verify welcome page when no backup exists
+            "Backup summary is consistent between Dashboard and Backup Status page.");
+} // 19. Verify welcome page when no backup exists
     @Test
     public void verifyWelcomePageWhenNoBackupsExist() {
 
