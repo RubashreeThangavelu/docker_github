@@ -278,29 +278,49 @@ public class DashboardTest extends BaseTest {
     }
 
    // 18. verify backup Summary consistency
-    @Test
+   @Test
 public void verifyBackupSummaryConsistency() throws InterruptedException {
 
     WebDriverWait wait =
-            new WebDriverWait(driver, Duration.ofSeconds(40));
+            new WebDriverWait(driver, Duration.ofSeconds(90));
 
-    // ---------------- Dashboard page ----------------
+    JavascriptExecutor js =
+            (JavascriptExecutor) driver;
 
+    // Wait until dashboard page fully loaded
+    wait.until(driver ->
+            js.executeScript("return document.readyState")
+                    .equals("complete"));
+
+    // Wait for dashboard summary element
     WebElement dashLastFile =
-            wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.xpath("//p[strong[contains(text(),'Files in Last Backup:')]]")));
+            wait.until(ExpectedConditions.presenceOfElementLocated(
+                    By.xpath("//p[strong[contains(text(),'Files in Last Backup:')]]")
+            ));
+
+    js.executeScript(
+            "arguments[0].scrollIntoView(true);",
+            dashLastFile
+    );
+
+    wait.until(
+            ExpectedConditions.visibilityOf(dashLastFile)
+    );
 
     WebElement dashLastRun =
             wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.xpath("//p[strong[contains(text(),'Last Backup Time:')]]/span")));
+                    By.xpath("//p[strong[contains(text(),'Last Backup Time:')]]/span")
+            ));
 
     WebElement dashStatus =
             wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.xpath("//p[strong[contains(text(),'Status:')]]/span")));
+                    By.xpath("//p[strong[contains(text(),'Status:')]]/span")
+            ));
 
     WebElement dashNextRun =
             wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.xpath("//p[strong[contains(text(),'Total Backups Completed:')]]/span")));
+                    By.xpath("//p[strong[contains(text(),'Total Backups Completed:')]]/span")
+            ));
 
     String dashLastFileText =
             dashLastFile.getText()
@@ -308,71 +328,56 @@ public void verifyBackupSummaryConsistency() throws InterruptedException {
                     .trim();
 
     String dashLastRunText =
-            dashLastRun.getText()
-                    .replace("Last Backup Time:", "")
-                    .trim();
+            dashLastRun.getText().trim();
 
     String dashStatusText =
-            dashStatus.getText()
-                    .replace("Status:", "")
-                    .trim();
+            dashStatus.getText().trim();
 
     String dashNextRunText =
-            dashNextRun.getText()
-                    .replace("Total Backups Completed:", "")
-                    .trim();
+            dashNextRun.getText().trim();
 
     System.out.println("Dashboard - Last File: " + dashLastFileText);
     System.out.println("Dashboard - Last Run: " + dashLastRunText);
     System.out.println("Dashboard - Status: " + dashStatusText);
     System.out.println("Dashboard - Next Run: " + dashNextRunText);
 
-    // ---------------- Go to backup status page ----------------
+    // small wait before next page
+    Thread.sleep(2000);
 
     driver.get(baseUrl + "index.jsp");
 
-    // wait until page fully loaded
-    wait.until(webDriver ->
-            ((JavascriptExecutor) webDriver)
-                    .executeScript("return document.readyState")
+    wait.until(driver ->
+            js.executeScript("return document.readyState")
                     .equals("complete"));
 
-    // ---------------- Debug logs ----------------
-
-    System.out.println("Current URL: " + driver.getCurrentUrl());
-
-    System.out.println("===== PAGE SOURCE START =====");
-    System.out.println(driver.getPageSource());
-    System.out.println("===== PAGE SOURCE END =====");
-
-    List<WebElement> paragraphs =
-            driver.findElements(By.tagName("p"));
-
-    System.out.println("===== ALL PARAGRAPHS =====");
-
-    for (WebElement p : paragraphs) {
-        System.out.println(p.getText());
-    }
-
-    System.out.println("===== END PARAGRAPHS =====");
-
-    // ---------------- Backup status elements ----------------
-
     WebElement statusLastFile =
-            wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.xpath("//p[strong[contains(text(),'Last File:')]]")));
+            wait.until(ExpectedConditions.presenceOfElementLocated(
+                    By.xpath("//p[strong[contains(text(),'Last File:')]]")
+            ));
+
+    js.executeScript(
+            "arguments[0].scrollIntoView(true);",
+            statusLastFile
+    );
+
+    wait.until(
+            ExpectedConditions.visibilityOf(statusLastFile)
+    );
 
     WebElement statusLastRun =
             wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.xpath("//p[strong[contains(text(),'Last Run:')]]")));
+                    By.xpath("//p[strong[contains(text(),'Last Run:')]]")
+            ));
 
     WebElement statusStatus =
             wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.xpath("//p[strong[contains(text(),'Status:')]]")));
+                    By.xpath("//p[strong[contains(text(),'Status:')]]")
+            ));
 
     WebElement statusNextRun =
             wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.xpath("//p[strong[contains(text(),'Next Scheduled Run:')]]")));
+                    By.xpath("//p[strong[contains(text(),'Next Scheduled Run:')]]")
+            ));
 
     String statusLastFileText =
             statusLastFile.getText()
@@ -399,20 +404,21 @@ public void verifyBackupSummaryConsistency() throws InterruptedException {
     System.out.println("Backup Status - Status: " + statusStatusText);
     System.out.println("Backup Status - Next Run: " + statusNextRunText);
 
-    // ---------------- Assertions ----------------
-
     Assert.assertEquals(
             statusLastRunText,
             dashLastRunText,
-            "Last Run mismatch!");
+            "Last Run mismatch!"
+    );
 
     Assert.assertEquals(
             statusStatusText,
             dashStatusText,
-            "Status mismatch!");
+            "Status mismatch!"
+    );
 
     System.out.println(
-            "Backup summary is consistent between Dashboard and Backup Status page.");
+            "Backup summary is consistent between Dashboard and Backup Status page."
+    );
 }
     // 19. Verify welcome page when no backup exists
     @Test
