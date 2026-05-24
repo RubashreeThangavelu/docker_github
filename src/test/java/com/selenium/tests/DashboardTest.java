@@ -276,64 +276,60 @@ public class DashboardTest extends BaseTest {
     }
 
    // 18. verify backup Summary consistency
-       @Test
-    public void verifyBackupSummaryConsistency() throws InterruptedException {
+     @Test
+public void verifyBackupSummaryConsistency() {
+
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 
+    WebElement dashLastFile =
+        wait.until(ExpectedConditions.visibilityOfElementLocated(
+            By.xpath("//strong[contains(normalize-space(),'Files in Last Backup')]/parent::p")));
 
-   WebElement dashLastFile = wait.until(ExpectedConditions.visibilityOfElementLocated(
-    By.xpath("//p[strong[contains(text(),'Files in Last Backup:')]]")));
+    WebElement dashLastRun =
+        wait.until(ExpectedConditions.visibilityOfElementLocated(
+            By.xpath("//strong[contains(normalize-space(),'Last Backup Time')]/parent::p")));
 
+    WebElement dashStatus =
+        wait.until(ExpectedConditions.visibilityOfElementLocated(
+            By.xpath("//strong[contains(normalize-space(),'Status')]/parent::p")));
 
-    WebElement dashLastRun = driver.findElement(
-            By.xpath("//p[strong[contains(text(),'Last Backup Time:')]]/span"));
-    WebElement dashStatus = driver.findElement(
-            By.xpath("//p[strong[contains(text(),'Status:')]]/span"));
-    WebElement dashNextRun = driver.findElement(
-            By.xpath("//p[strong[contains(text(),'Total Backups Completed:')]]/span"));
+    WebElement dashNextRun =
+        wait.until(ExpectedConditions.visibilityOfElementLocated(
+            By.xpath("//strong[contains(normalize-space(),'Total Backups Completed')]/parent::p")));
 
+    String dashLastRunText =
+        dashLastRun.getText().replace("Last Backup Time:", "").trim();
 
-    String dashLastFileText = dashLastFile.getText().replace("Files in Last Backup:", "").trim();
-    String dashLastRunText = dashLastRun.getText().replace("Last Backup Time:", "").trim();
-    String dashStatusText = dashStatus.getText().replace("Status:", "").trim();
-    String dashNextRunText = dashNextRun.getText().replace("Total Backups Completed:", "").trim();
-
-
-    System.out.println("Dashboard - Last File: " + dashLastFileText);
-    System.out.println("Dashboard - Last Run: " + dashLastRunText);
-    System.out.println("Dashboard - Status: " + dashStatusText);
-    System.out.println("Dashboard - Next Run: " + dashNextRunText);
-
+    String dashStatusText =
+        dashStatus.getText().replace("Status:", "").trim();
 
     driver.get(baseUrl + "index.jsp");
 
+    wait.until(webDriver ->
+        ((JavascriptExecutor) webDriver)
+            .executeScript("return document.readyState")
+            .equals("complete"));
 
-    WebElement statusLastFile = wait.until(ExpectedConditions.visibilityOfElementLocated(
-            By.xpath("//p[strong[contains(text(),'Last File:')]]")));
-    WebElement statusLastRun = driver.findElement(
-            By.xpath("//p[strong[contains(text(),'Last Run:')]]"));
-    WebElement statusStatus = driver.findElement(
-            By.xpath("//p[strong[contains(text(),'Status:')]]"));
-    WebElement statusNextRun = driver.findElement(
-            By.xpath("//p[strong[contains(text(),'Next Scheduled Run:')]]"));
+    WebElement statusLastFile =
+        wait.until(ExpectedConditions.visibilityOfElementLocated(
+            By.xpath("//strong[contains(normalize-space(),'Last File')]/parent::p")));
 
+    WebElement statusLastRun =
+        wait.until(ExpectedConditions.visibilityOfElementLocated(
+            By.xpath("//strong[contains(normalize-space(),'Last Run')]/parent::p")));
 
-    String statusLastFileText = statusLastFile.getText().replace("Last File:", "").trim();
-    String statusLastRunText = statusLastRun.getText().replace("Last Run:", "").trim();
-    String statusStatusText = statusStatus.getText().replace("Status:", "").trim();
-    String statusNextRunText = statusNextRun.getText().replace("Next Scheduled Run:", "").trim();
+    WebElement statusStatus =
+        wait.until(ExpectedConditions.visibilityOfElementLocated(
+            By.xpath("//strong[contains(normalize-space(),'Status')]/parent::p")));
 
-    System.out.println("Backup Status - Last File: " + statusLastFileText);
-    System.out.println("Backup Status - Last Run: " + statusLastRunText);
-    System.out.println("Backup Status - Status: " + statusStatusText);
-    System.out.println("Backup Status - Next Run: " + statusNextRunText);
+    String statusLastRunText =
+        statusLastRun.getText().replace("Last Run:", "").trim();
 
+    String statusStatusText =
+        statusStatus.getText().replace("Status:", "").trim();
 
-    Assert.assertEquals(statusLastRunText, dashLastRunText, "Last Run mismatch!");
-    Assert.assertEquals(statusStatusText, dashStatusText, "Status mismatch!");
-
-
-    System.out.println("Backup summary is consistent between Dashboard and Backup Status page.");
+    Assert.assertEquals(statusLastRunText, dashLastRunText);
+    Assert.assertEquals(statusStatusText, dashStatusText);
 }
     // 19. Verify welcome page when no backup exists
     @Test
