@@ -320,7 +320,7 @@ public void verifyBackupSummaryConsistency() throws InterruptedException {
 
     // ---------------- Open Backup Status Page ----------------
 
-    driver.get(baseUrl + "index.jsp");
+    driver.get(baseUrl + "/index.jsp");
 
     wait.until(webDriver ->
             ((JavascriptExecutor) webDriver)
