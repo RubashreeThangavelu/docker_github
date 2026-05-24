@@ -31,6 +31,16 @@ jobs:
       - name: Start Containers
         run: docker compose up -d
 
+      # ✅ 1. Wait for MySQL
+      - name: Wait for MySQL
+        run: |
+            until docker exec mysql-db1 mysqladmin ping -uroot -proot --silent; do
+            echo "Waiting for MySQL..."
+            sleep 5
+            done
+
+          
+
       - name: Wait for Grid
         run: sleep 30
 
