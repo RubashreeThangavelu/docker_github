@@ -14,6 +14,7 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import com.selenium.utils.ConfigReader;
 import java.time.Duration;
+import org.openqa.selenium.JavascriptExecutor;
 
 public class DashboardTest extends BaseTest {
 
