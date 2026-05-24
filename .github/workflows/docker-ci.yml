@@ -34,8 +34,6 @@ jobs:
       - name: Wait for Grid
         run: sleep 30
 
-      - name: Verify DB data
-        run:   docker exec -i mysql-github mysql -uroot -proot < db/init.sql
 
       - name: Execute Tests
         run: docker compose run --rm selenium-tests mvn test
