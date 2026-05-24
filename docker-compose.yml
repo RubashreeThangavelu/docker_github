@@ -10,8 +10,6 @@ services:
       - shared-data:/data
     environment:
       - TZ=Asia/Kolkata
-      - DB_HOST=mysql
-      - DB_PORT=3306
     networks:
       - selenium-grid
 
@@ -26,28 +24,24 @@ services:
 
   selenium-tests:
     build: .
-    container_name: selenium-test
+    container_name: selenium-test-github
     depends_on:
       - firefox
       - app
-      - mysql
     working_dir: /app
     command: >
-      sh -c "/init-data.sh; mvn test; mkdir -p /reports; cp -r target/surefire-reports /reports/"
+      sh -c "set -e;
+      /init-data.sh &&
+      echo 'Waiting for Selenium...' &&
+      sleep 20 &&
+      mvn test &&
+      mkdir -p /reports &&
+      cp -r target/surefire-reports /reports/
+      exec sleep infinity
+      "
     volumes:
       - ./reports:/reports
       - shared-data:/data
-    networks:
-      - selenium-grid
-
-  mysql:
-    image: mysql:8
-    container_name: mysql-github
-    environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
-    ports:
-      - "3307:3306"
     networks:
       - selenium-grid
 
