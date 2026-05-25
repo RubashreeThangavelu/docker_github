@@ -1,12 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="BackupSuite" parallel="true" preserve-order="true">
-   <test name="BaseTest">
-             <parameter name="newBrowser" value="true"/>
-      <classes>
-            <class name="com.selenium.tests.BaseTest"/>
-           
-        </classes>
-    </test> 
 <!--test name="IsolatedBackupStatus1">
         <parameter name="newBrowser" value="true"/>
         <classes>
