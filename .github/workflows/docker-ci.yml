@@ -52,7 +52,7 @@ jobs:
           docker compose exec mysql-db1 mysql -uroot -proot -e "USE login_db; SHOW TABLES;"
 
       - name: Run tests
-        run: docker compose run --rm selenium-tests mvn clean test
+        run: docker compose run --rm selenium-tests mvn test
 
       - name: Debug report location
         run: |
