@@ -31,7 +31,6 @@ jobs:
       - name: Clean all old reports
         run: |
             rm -rf target/surefire-reports
-            rm -rf reports
             rm -rf test-output
 
       - name: Build containers
