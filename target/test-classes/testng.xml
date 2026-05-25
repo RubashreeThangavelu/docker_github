@@ -1,0 +1,70 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="BackupSuite" parallel="false" preserve-order="true">
+
+    <!--test name="IsolatedBackupStatus1">
+        <parameter name="newBrowser" value="true"/>
+        <classes>
+            <class name="com.selenium.tests.BackupStatusTest">
+                <methods>
+                    <include name="verifyStatusWhenNoBackupHasRun"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="IsolatedBackupStatus2">
+        <parameter name="newBrowser" value="true"/>
+        <classes>
+            <class name="com.selenium.tests.DashboardTest">
+                <methods>
+                    <include name="verifyWelcomePageWhenNoBackupsExist"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Dashboard">
+        <parameter name="newBrowser" value="true"/>
+        <classes>
+            <class name="com.selenium.tests.DashboardTest">
+                <methods>
+                    <exclude name="verifyWelcomePageWhenNoBackupsExist"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Login">
+        <parameter name="newBrowser" value="true"/>
+        <classes>
+            <class name="com.selenium.tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Signup">
+        <parameter name="newBrowser" value="true"/>
+        <classes>
+            <class name="com.selenium.tests.SignupTest"/>
+        </classes>
+    </test>
+
+    <test name="BackupScheduler">
+        <parameter name="newBrowser" value="true"/>
+        <classes>
+            <class name="com.selenium.tests.BackupSchedulerTest"/>
+        </classes>
+    </test>
+
+    <test name="BackupStatus">
+        <parameter name="newBrowser" value="true"/>
+        <classes>
+            <class name="com.selenium.tests.BackupStatusTest">
+                <methods>
+                    <exclude name="verifyStatusWhenNoBackupHasRun"/>
+                </methods>
+            </class>
+        </classes>
+    </test-->
+
+</suite>

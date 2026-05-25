@@ -1,0 +1,11 @@
+/home/ruba-ts501/docker_automation/src/test/java/com/selenium/tests/BackupSchedulerTest.java
+/home/ruba-ts501/docker_automation/src/test/java/com/selenium/pages/BackupSchedulerPage.java
+/home/ruba-ts501/docker_automation/src/test/java/com/selenium/pages/SignupPage.java
+/home/ruba-ts501/docker_automation/src/test/java/com/selenium/tests/BackupStatusTest.java
+/home/ruba-ts501/docker_automation/src/test/java/com/selenium/pages/LoginPage.java
+/home/ruba-ts501/docker_automation/src/test/java/com/selenium/tests/LoginTest.java
+/home/ruba-ts501/docker_automation/src/test/java/com/selenium/tests/DashboardTest.java
+/home/ruba-ts501/docker_automation/src/test/java/com/selenium/tests/SignupTest.java
+/home/ruba-ts501/docker_automation/src/test/java/com/selenium/pages/BackupStatusPage.java
+/home/ruba-ts501/docker_automation/src/test/java/com/selenium/tests/BaseTest.java
+/home/ruba-ts501/docker_automation/src/test/java/com/selenium/utils/ConfigReader.java
