@@ -59,6 +59,7 @@ jobs:
         with:
           name: selenium-reports
           path: target/surefire-reports/
+                target/test-output/
 
 
       - name: Stop containers
