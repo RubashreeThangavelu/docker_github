@@ -28,11 +28,6 @@ jobs:
       - name: Stop old containers
         run: docker compose down -v
 
-      - name: Clean all old reports
-        run: |
-            rm -rf target/surefire-reports
-            rm -rf test-output
-
       - name: Build containers
         run: docker compose build
 
