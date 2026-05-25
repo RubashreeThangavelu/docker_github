@@ -48,14 +48,20 @@ jobs:
           docker compose exec mysql-db1 mysql -uroot -proot -e "USE login_db; SHOW TABLES;"
 
       - name: Run tests
-        run: docker compose run --rm selenium-tests mvn test
+        run: docker compose run --rm selenium-tests mvn clean test
+
+      - name: Debug report location
+        run: |
+            echo "Checking Surefire reports..."
+            ls -R target/surefire-reports || true
+            ls -R reports || true
 
       - name: Upload reports
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: selenium-reports
-          path: reports/
+          path: target/surefire-reports/
 
       - name: Stop containers
         if: always()
