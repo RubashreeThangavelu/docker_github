@@ -65,7 +65,7 @@ jobs:
         if: always()
         with:
           name: selenium-reports
-          path: target/surefire-reports/
+          path: reports/
 
       - name: Stop containers
         if: always()
