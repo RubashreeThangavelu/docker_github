@@ -1,7 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="BackupSuite" parallel="true" preserve-order="true">
+<suite name="BackupSuite" parallel="false" preserve-order="true">
  <test name="BaseTest">
-             <parameter name="newBrowser" value="true"/>
       <classes>
             <class name="com.selenium.tests.BaseTest"/>
            
@@ -30,10 +29,11 @@
      <test name="Dashboard">
              <parameter name="newBrowser" value="true"/>
       <classes>
-            <class name="com.selenium.tests.DashboardTest"/>
+            <class name="com.selenium.tests.DashboardTest">
             <methods>
                     <exclude name="verifyWelcomePageWhenNoBackupsExist"/>
                 </methods>
+            </class>
         </classes>
     </test> 
     <test name="Login">
