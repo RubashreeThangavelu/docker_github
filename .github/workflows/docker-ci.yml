@@ -47,10 +47,7 @@ jobs:
         run: |
           docker compose exec mysql-db1 mysql -uroot -proot -e "USE login_db; SHOW TABLES;"
 
-      - name: Clean old reports
-        run: |
-            rm -rf target/surefire-reports
-            rm -rf test-output
+      
       
       - name: Run tests
         run: docker compose run --rm selenium-tests mvn test
