@@ -995,3 +995,12 @@ Status     : Success
 Size       : 17 bytes
 Duration   : 0 sec
 
+======================================
+Time       : 2026-05-25 12:45:32
+Source     : /data/temp
+Destination: /data/backup
+File       : file6.txt
+Status     : Success
+Size       : 17 bytes
+Duration   : 0 sec
+
